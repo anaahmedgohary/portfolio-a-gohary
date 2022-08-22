@@ -89,15 +89,18 @@ header {
             width: 33%;
 
             .contact-info {
+                width: 100%;
 
                 h3 {
                     text-decoration: underline;
-                    font-size: 160%;
+                    font-size: clamp(1vw,2vw,3vw);
                     font-weight: bolder;
                 }
 
-                p {
-                    font-size: 2vw;
+                
+                .column{
+                    font-size:clamp(.1em,2vw,2em);
+                    width: 10%;
                 }
             }
 

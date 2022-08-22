@@ -64,13 +64,17 @@ header .und-pic .contact-container {
   height: fit-content;
   width: 33%;
 }
+header .und-pic .contact-container .contact-info {
+  width: 100%;
+}
 header .und-pic .contact-container .contact-info h3 {
   text-decoration: underline;
-  font-size: 160%;
+  font-size: 2vw;
   font-weight: bolder;
 }
-header .und-pic .contact-container .contact-info p {
-  font-size: 2vw;
+header .und-pic .contact-container .contact-info .column {
+  font-size: clamp(0.1em, 2vw, 2em);
+  width: 10%;
 }
 
 .sub-header {
