@@ -3,32 +3,33 @@
 }
 
 body {
-  background-color: darkgreen;
+  background-color: rgb(0, 100, 0);
 }
 
-header .main-nav span {
+.main-nav span {
   padding: 1%;
   font-size: smaller;
 }
-header .main-nav span a {
+.main-nav span a {
   text-decoration: none;
   color: black;
 }
-header #searchBarDiv {
+
+#searchBarDiv {
   display: grid;
   justify-content: center;
   align-items: center;
   margin-top: 7%;
   padding: 1%;
 }
-header #searchBarDiv #searchBarInp {
+#searchBarDiv #searchBarInp {
   width: 50vw;
   height: 4.5vh;
   text-align: center;
   font-size: clamp(1em, 2vw, 3em);
   padding: 0%;
 }
-header #searchBarDiv .half-circle-left {
+#searchBarDiv .half-circle-left {
   background-color: white;
   width: 3.7vh;
   height: 3.7vh;
@@ -40,7 +41,7 @@ header #searchBarDiv .half-circle-left {
   left: 24.1%;
   overflow: hidden;
 }
-header #searchBarDiv .half-circle-right {
+#searchBarDiv .half-circle-right {
   background-color: white;
   width: 3.7vh;
   height: 3.7vh;

@@ -61,7 +61,7 @@ function ReviewApp()
 
   return (
     <div>
-        <header>
+        <div>
         <div>
             <nav className="main-nav">
                 <span><a href="index.html">Home</a></span>
@@ -75,7 +75,7 @@ function ReviewApp()
             <div className="half-circle-left"></div>
             <div className="half-circle-right"></div>
         </div>
-    </header>
+    </div>
     <section>
         <div className="review-div">
             <h2>Add Your Review Now!</h2>
