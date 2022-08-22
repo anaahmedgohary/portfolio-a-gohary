@@ -30,8 +30,8 @@ function Bodyb()
                 <div class="card proj2-card">
                     <img class="card-img-top card-image" src="./images/reviewSite.jpg" alt='website screenpshot' />
                     <div class="card-body">
-                        <h5 class="card-title">Customer reviews web app with vanilla Javascript</h5>
-                        <p class="card-text">Project of website for Customer reviews made with with vanilla Javascript.</p>
+                        <h5 class="card-title">Customer reviews web app with jQuery</h5>
+                        <p class="card-text">Project of website for Customer reviews made with with jQuery.</p>
                         <a href="/review-app" class="btn btn-primary">Link to project</a>
                     </div>
                 </div>

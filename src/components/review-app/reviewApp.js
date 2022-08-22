@@ -4,63 +4,35 @@ import "./style/review-app.css";
 
 function ReviewApp()
 {
-
-
-    
   
+  function showRevRes() {
     
+    jqWay();
+    $("#serviceName").text($("#bNameInp").val());
+    $("#ratingOverall").text($("#ovRateInp").val());
+    $("#custServ").text($("#custServInp").val());
+    $("#staffRate").text($("#staffInp").val());
+    $("#qualityRate").text($("#qualityInp").val());
+    $("#cleanRate").text($("#cleanInp").val());
+    $("#paragraphRev").text($("#letterInp").val());
 
-    function ready(){
-      let serviceName = $("#serviceName");
-      let ratingOverall = $("#ratingOverall");
-      let custServ = $("#custServ");
-      let staffRate = $("#staffRate");
-      let qualityRate = $("#qualityRate");
-      let cleanRate = $("#cleanRate");
-      let paragraphRev = $("#paragraphRev");
+    $(".hidden").attr("id", "showNewRev");
+  }
 
-      $("#submit-rev-btn").click();
-      $("#submit-rev-btn").click(() => {
-        //alert("Are You Sure?")
-        jqWay();
-        serviceName.text($("#bNameInp").val());
-        ratingOverall.text($("#ovRateInp").val());
-        custServ.text($("#custServInp").val());
-        staffRate.text($("#staffInp").val());
-        qualityRate.text($("#qualityInp").val());
-        cleanRate.text($("#cleanInp").val());
-        paragraphRev.text($("#letterInp").val());
-
-        $(".hidden").attr("id", "showNewRev");
-      });
-
-      function jqWay() {
-        $(".rate-0-5").each(function () {
-          if ($(this).val() > 5) {
-            $(this).val(5);
-          } else if ($(this).val() < 0) {
-            $(this).val(0);
-          } else if($(this).val() === "") {
-            $(this).val(5);;
-          }
-        });
-      };
-
-      serviceName.text($("#bNameInp").val());
-      ratingOverall.text($("#ovRateInp").val());
-      custServ.text($("#custServInp").val());
-      staffRate.text($("#staffInp").val());
-      qualityRate.text($("#qualityInp").val());
-      cleanRate.text($("#cleanInp").val());
-      paragraphRev.text($("#letterInp").val());
-
-    };
-    
-    
-
+  function jqWay() {
+    $(".rate-0-5").each(function () {
+      if ($(this).val() > 5) {
+        $(this).val(5);
+      } else if ($(this).val() < 0) {
+        $(this).val(0);
+      } else if ($(this).val() === "") {
+        $(this).val(5);
+      }
+    });
+  }
 
   return (
-    <div id='myReviewApp'>
+    <div id="myReviewApp">
       <div>
         <nav className="main-nav">
           <span>
@@ -78,7 +50,7 @@ function ReviewApp()
         </nav>
       </div>
       <div id="searchBarDiv">
-        <input id="searchBarInp" type="search" placeholder="Search me!" />
+        <input id="searchBarInp" type="search" placeholder="Search!" />
         <div className="half-circle-left"></div>
         <div className="half-circle-right"></div>
       </div>
@@ -171,7 +143,7 @@ function ReviewApp()
           </div>
           <div>
             <input
-              onClick={ready}
+              onClick={showRevRes}
               id="submit-rev-btn"
               className="column-2"
               type="submit"
