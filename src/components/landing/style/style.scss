@@ -1,0 +1,210 @@
+$guccired: rgba(168, 43, 17, 1);
+$gucciyellow: rgba(189, 147, 2, 1);
+$guccigreen: rgba(10, 106, 86, 1);
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+header {
+    background-color: rgba(168, 43, 17, .8);
+    ;
+    background-image: url(./images/lughtbubls.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    color: bisque;
+    flex-wrap: wrap;
+    padding: 3%;
+    padding-bottom: 3%;
+
+
+
+    .personal-image {
+        margin: auto;
+        border: solid;
+        height: 40vw;
+        width: 40vw;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 5%;
+
+
+        .profile-img {
+            height: 38vw;
+            width: 38vw;
+            border-radius: 50%;
+        }
+    }
+
+    .und-pic {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .hi-myname {
+
+            max-height: 25vw;
+            width: 33%;
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-height: 27vw;
+                height: fit-content;
+
+
+                border-radius: 10%;
+            }
+
+
+        }
+
+
+        .contact-container {
+            font-size: 1.5vw;
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin-left: auto;
+            flex-wrap: wrap;
+            border: solid;
+            height: fit-content;
+            width: 33%;
+
+            .contact-info {
+
+                h3 {
+                    text-decoration: underline;
+                    font-size: 160%;
+                    font-weight: bolder;
+                }
+
+                p {
+                    font-size: 2vw;
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+
+.sub-header {
+    background-color: $guccired;
+    width: 100%;
+    height: fit-content;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 0%;
+
+
+    .alll-cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 25px;
+        border-radius: 13%;
+
+
+
+        .about-cart {
+            border: solid;
+            text-align: center;
+            max-width: 55%;
+            width: 35vw;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+
+            .about-img {
+                width: 60%;
+                max-width: 200px;
+                margin: auto;
+                border-radius: 50%;
+                margin-top: 01%;
+            }
+
+            .card-title {
+                font-size: 3vw;
+                border-top: solid;
+                border-bottom: solid;
+            }
+
+            .about-content {
+
+                text-align: center;
+                font-weight: bold;
+                font-size: 2vw;
+                background-color: antiquewhite;
+            }
+        }
+
+        .skil-cart {
+            background-color: rgba(0, 210, 142, .6);
+            width: 25%;
+            height: 100%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+
+            .mcard-body {
+                text-align: center;
+                height: 65%;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+
+                :hover {
+                    background-color: bisque;
+                }
+
+                .card-title {
+                    font-size: 2.5vw;
+                }
+
+
+                p {
+                    font-size: 2.5vw;
+                    font-weight: bolder;
+                    width: 100%;
+                    border: solid;
+                    text-align: center;
+
+                }
+
+            }
+
+        }
+
+        .sskills {
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 01%;
+        }
+
+    }
+
+
+}
