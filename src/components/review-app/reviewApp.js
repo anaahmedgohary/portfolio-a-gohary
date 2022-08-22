@@ -21,9 +21,6 @@ function ReviewApp()
       let cleanRate = $("#cleanRate");
       let paragraphRev = $("#paragraphRev");
 
-      //$("#test1").text
-      //ratingOverall.text("WWWWWW");
-      // $("#test1").text("Hello world!");
 
       serviceName.text($("#bNameInp").val());
       ratingOverall.text($("#ovRateInp").val());
