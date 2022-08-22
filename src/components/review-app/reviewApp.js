@@ -142,13 +142,14 @@ function ReviewApp()
             />
           </div>
           <div>
-            <input
+            <button
               onClick={showRevRes}
               id="submit-rev-btn"
               className="column-2"
-              type="submit"
-              value="Submit"
-            />
+              type="button"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </section>
