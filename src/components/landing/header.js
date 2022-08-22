@@ -16,17 +16,13 @@ function Header()
             <div class="hi-myname">
               <img src="./images/Hi-my-name-is-Ahmed-8-10-20225.png" alt="" />
             </div>
-
+            <div></div>
             <div class="contact-container container">
-              <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p class="column">Email: gogoahmed13@gmail.com</p>
-                <p class="column">phone: +201155267277</p>
-
-                <p class="column">Address: Cairo, Egypt</p>
-                            <p class="column">github.com
-                                /anaahmedgohary</p>
-              </div>
+              <h3>Contact Information</h3>
+              <p class="row">Email: gogoahmed13@gmail.com</p>
+              <p class="row">phone: +201155267277</p>
+              <p class="row">Address: Cairo, Egypt</p>
+              <p class="row">github.com/anaahmedgohary</p>
             </div>
           </div>
         </header>

@@ -14,6 +14,9 @@ $guccigreen: rgba(10, 106, 86, 1);
 
 }
 
+body{
+    background-color: black;
+}
 
 header {
     background-color: rgba(168, 43, 17, .8);
@@ -85,24 +88,15 @@ header {
             // margin-left: auto;
             flex-wrap: wrap;
             border: solid;
-            height: fit-content;
+            max-height: 27vw;
             width: 33%;
 
-            .contact-info {
-                width: 100%;
-
-                h3 {
+            h3 {
                     text-decoration: underline;
-                    font-size: clamp(1vw,2vw,3vw);
+                    font-size: clamp(1vw, 2vw, 3vw);
                     font-weight: bolder;
                 }
 
-                
-                .column{
-                    font-size:clamp(.1em,2vw,2em);
-                    width: 10%;
-                }
-            }
 
         }
     }
