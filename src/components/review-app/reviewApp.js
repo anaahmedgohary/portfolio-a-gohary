@@ -7,7 +7,7 @@ function ReviewApp()
 
 
     
-  ready();
+  
     
 
     function ready(){
@@ -19,6 +19,7 @@ function ReviewApp()
       let cleanRate = $("#cleanRate");
       let paragraphRev = $("#paragraphRev");
 
+      $("#submit-rev-btn").click();
       $("#submit-rev-btn").click(() => {
         //alert("Are You Sure?")
         jqWay();
@@ -59,7 +60,7 @@ function ReviewApp()
 
 
   return (
-    <>
+    <div id='myReviewApp'>
       <div>
         <nav className="main-nav">
           <span>
@@ -207,7 +208,7 @@ function ReviewApp()
           <p id="paragraphRev">aaaaaaaaa</p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
