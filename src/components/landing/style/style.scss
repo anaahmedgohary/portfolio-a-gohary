@@ -59,11 +59,9 @@ header {
 
             max-height: 25vw;
             width: 33%;
-            display: grid;
+            display: flex;
             justify-content: center;
-            place-items: center;
             align-items: center;
-            text-align: center;
 
             img {
                 width: 100%;
@@ -79,8 +77,8 @@ header {
 
 
         .contact-container {
-            font-size: 1.5vw;
-            font-weight: bolder;
+            
+            
             text-align: center;
             display: flex;
             justify-content: center;
@@ -88,14 +86,19 @@ header {
             // margin-left: auto;
             flex-wrap: wrap;
             border: solid;
-            max-height: 27vw;
+            max-height: 25vw;
             width: 33%;
 
             h3 {
                     text-decoration: underline;
                     font-size: clamp(1vw, 2vw, 3vw);
                     font-weight: bolder;
-                }
+            }
+
+            p{
+                font-size: clamp(0.001px, 1.3vw, 3vw);
+                width: 100%;
+            }
 
 
         }
