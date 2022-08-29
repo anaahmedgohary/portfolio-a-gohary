@@ -66,10 +66,12 @@ header .und-pic .contact-container h3 {
   text-decoration: underline;
   font-size: 2vw;
   font-weight: bolder;
+  text-align: center;
 }
 header .und-pic .contact-container p {
   font-size: clamp(0.001px, 1.3vw, 3vw);
   width: 100%;
+  text-align: center;
 }
 
 .sub-header {

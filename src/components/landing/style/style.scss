@@ -90,14 +90,16 @@ header {
             width: 33%;
 
             h3 {
-                    text-decoration: underline;
-                    font-size: clamp(1vw, 2vw, 3vw);
-                    font-weight: bolder;
+                text-decoration: underline;
+                font-size: clamp(1vw, 2vw, 3vw);
+                font-weight: bolder;
+                text-align: center;
             }
 
             p{
                 font-size: clamp(0.001px, 1.3vw, 3vw);
                 width: 100%;
+                text-align: center;
             }
 
 
