@@ -1,6 +1,14 @@
-$guccired: rgba(168, 43, 17, 1);
+
 $gucciyellow: rgba(189, 147, 2, 1);
 $guccigreen: rgba(10, 106, 86, 1);
+$guccired: rgba(168, 43, 17, 1);
+
+@mixin FlexCenters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 
@@ -20,43 +28,36 @@ body{
 
 header {
     background-color: rgba(168, 43, 17, .8);
-    ;
     background-image: url(./images/lughtbubls.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    width: 100%;
     color: bisque;
-    flex-wrap: wrap;
     padding: 3%;
     padding-bottom: 3%;
-
-
 
     .personal-image {
         margin: auto;
         border: solid;
-        height: 40vw;
-        width: 40vw;
+        height: 20vw;
+        width: 20vw;
         border-radius: 50%;
         display: grid;
         place-items: center;
         margin-bottom: 5%;
 
-
         .profile-img {
-            height: 38vw;
-            width: 38vw;
+            height: 18vw;
+            width: 18vw;
             border-radius: 50%;
         }
     }
 
     .und-pic {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         .hi-myname {
-
             max-height: 25vw;
             width: 33%;
             display: flex;
@@ -65,41 +66,47 @@ header {
 
             img {
                 width: 100%;
-                max-height: 27vw;
+                max-height: 25vw;
                 height: fit-content;
-
-
                 border-radius: 10%;
             }
-
-
         }
 
-
         .contact-container {
-            
-            
             text-align: center;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            flex-direction: column;
             // margin-left: auto;
             flex-wrap: wrap;
-            border: solid;
-            max-height: 25vw;
-            width: 33%;
+            //border: solid;
+            border-radius: 11px;
+            //height: 23vw;
+            width: 42%;
+            max-width: 40rem;
+            //min-width: fit-content;
 
             h3 {
                 text-decoration: underline;
-                font-size: clamp(1vw, 2vw, 3vw);
+                font-size: 1.6rem;
                 font-weight: bolder;
                 text-align: center;
+                margin: 0;
             }
 
             p{
-                font-size: clamp(0.001px, 1.3vw, 3vw);
+                @include FlexCenters();
+                flex-direction: column;
+                flex-wrap: wrap;
+                line-break: auto;
+                word-wrap: break-word;
+                //white-space: no-wrap;
+                font-size: 1.3rem;
                 width: 100%;
                 text-align: center;
+                margin: 0;
+                min-height: fit-content;
             }
 
 
@@ -109,7 +116,45 @@ header {
 
 
 }
+@media screen and (max-width: 650px) {
+    .und-pic {
+        @include FlexCenters();
+        flex-direction: column;
+    }
+    .contact-container{
+        min-width: 80vw;
+        min-height: 20rem;
+        h3{
+            
+            color: black;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 45%;
+        }
+    }
+    
+}
 
+@media screen and (max-width: 390px) {
+    .und-pic {
+        @include FlexCenters();
+        flex-direction: column;
+    }
+    .contact-container{
+        min-width: 80vw;
+        min-height: 20rem;
+        h3{
+            
+            color: black;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 45%;
+        }
+    }
+    
+}
 
 .sub-header {
     background-color: $guccired;

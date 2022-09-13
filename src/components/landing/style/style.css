@@ -11,30 +11,28 @@ header {
   background-image: url(./images/lughtbubls.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-  width: 100%;
   color: bisque;
-  flex-wrap: wrap;
   padding: 3%;
   padding-bottom: 3%;
 }
 header .personal-image {
   margin: auto;
   border: solid;
-  height: 40vw;
-  width: 40vw;
+  height: 20vw;
+  width: 20vw;
   border-radius: 50%;
   display: grid;
   place-items: center;
   margin-bottom: 5%;
 }
 header .personal-image .profile-img {
-  height: 38vw;
-  width: 38vw;
+  height: 18vw;
+  width: 18vw;
   border-radius: 50%;
 }
 header .und-pic {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 header .und-pic .hi-myname {
@@ -46,7 +44,7 @@ header .und-pic .hi-myname {
 }
 header .und-pic .hi-myname img {
   width: 100%;
-  max-height: 27vw;
+  max-height: 25vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -55,25 +53,79 @@ header .und-pic .hi-myname img {
 header .und-pic .contact-container {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  border: solid;
-  max-height: 25vw;
-  width: 33%;
+  border-radius: 11px;
+  width: 42%;
+  max-width: 40rem;
 }
 header .und-pic .contact-container h3 {
   text-decoration: underline;
-  font-size: 2vw;
+  font-size: 1.6rem;
   font-weight: bolder;
   text-align: center;
+  margin: 0;
 }
 header .und-pic .contact-container p {
-  font-size: clamp(0.001px, 1.3vw, 3vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-break: auto;
+  word-wrap: break-word;
+  font-size: 1.3rem;
   width: 100%;
   text-align: center;
+  margin: 0;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
+@media screen and (max-width: 650px) {
+  .und-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .contact-container {
+    min-width: 80vw;
+    min-height: 20rem;
+  }
+  .contact-container h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  .contact-container p {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .und-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .contact-container {
+    min-width: 80vw;
+    min-height: 20rem;
+  }
+  .contact-container h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  .contact-container p {
+    font-size: 45%;
+  }
+}
 .sub-header {
   background-color: rgb(168, 43, 17);
   width: 100%;
