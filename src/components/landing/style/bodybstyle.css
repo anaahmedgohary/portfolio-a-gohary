@@ -47,3 +47,16 @@
     margin: auto;
 }
 }
+
+@media screen and (max-width: 770px) {
+    .proj-cards{
+        flex-direction: column;
+    }
+    .proj-card{
+    max-width: 100%;
+    min-width: 99%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+}

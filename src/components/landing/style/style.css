@@ -141,21 +141,23 @@ header .und-pic .contact-container p {
   align-items: center;
   border: solid 25px;
   border-radius: 13%;
-  width: 100%;
+  width: 80%;
 }
 .sub-header .alll-cards .about-cart {
   border: solid;
   text-align: center;
   max-width: 55%;
-  width: 35vw;
+  width: 45%;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: 5%;
 }
 .sub-header .alll-cards .about-cart .about-img {
   width: 40%;
   max-width: 140px;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 50px 50px;
   margin-top: 1%;
 }
 .sub-header .alll-cards .about-cart .card-title {
@@ -175,6 +177,7 @@ header .und-pic .contact-container p {
   height: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: 10%;
 }
 .sub-header .alll-cards .skil-cart .mcard-body {
   text-align: center;
@@ -217,6 +220,7 @@ header .und-pic .contact-container p {
     min-width: 90%;
     max-width: 99%;
     height: 100%;
+    margin: auto;
   }
   .sub-header .alll-cards .skil-cart .mcard-body {
     text-align: center;
@@ -254,6 +258,54 @@ header .und-pic .contact-container p {
     margin-top: 1%;
   }
 }
+@media screen and (max-width: 780px) {
+  .sub-header .alll-cards {
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    min-width: 100vw;
+  }
+  .sub-header .alll-cards .skil-cart {
+    min-width: 90%;
+    max-width: 99%;
+    height: 100%;
+    margin: auto;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body p {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1%;
+  }
+  .sub-header .alll-cards .sskills {
+    max-width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .sub-header .alll-cards .about-cart {
+    border: solid;
+    text-align: center;
+    max-width: 99%;
+    min-width: 90%;
+  }
+  .sub-header .alll-cards .about-cart .about-img {
+    max-height: 20%;
+    max-width: 24%;
+    margin: auto;
+    border-radius: 50px 50px;
+    margin-top: 1%;
+  }
+}
 @media screen and (max-width: 540px) {
   .sub-header .alll-cards {
     justify-content: center;
@@ -265,6 +317,7 @@ header .und-pic .contact-container p {
     min-width: 90%;
     max-width: 99%;
     height: 100%;
+    margin: auto;
   }
   .sub-header .alll-cards .skil-cart .mcard-body {
     text-align: center;
@@ -312,6 +365,7 @@ header .und-pic .contact-container p {
     min-width: 98%;
     max-width: 99%;
     height: 100%;
+    margin: auto;
   }
   .sub-header .alll-cards .skil-cart .mcard-body {
     text-align: center;
