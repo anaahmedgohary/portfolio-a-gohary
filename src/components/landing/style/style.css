@@ -357,12 +357,17 @@ header .und-pic .contact-container p {
     flex-direction: column;
   }
   .contact-container {
-    min-width: 80vw;
+    min-width: 99vw;
     min-height: 20rem;
+    flex-wrap: wrap;
+    word-break: break-all;
+    line-break: anywhere;
+    word-wrap: break-word;
   }
   .contact-container p {
     flex-wrap: wrap;
     word-break: break-all;
-    line-break: auto;
+    line-break: anywhere;
+    word-wrap: break-word;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -450,15 +450,19 @@ header {
     }
 
     .contact-container {
-        min-width: 80vw;
+        min-width: 99vw;
         min-height: 20rem;
+        flex-wrap: wrap;
+            word-break: break-all;
+            line-break: anywhere;
+            word-wrap: break-word;
 
 
         p {
             flex-wrap: wrap;
             word-break: break-all;
-            line-break: auto;
-            
+            line-break: anywhere;
+            word-wrap: break-word;
         }
     }
 
