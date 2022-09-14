@@ -36,9 +36,9 @@ function Bodya() {
               <h3 className="card-title">About Me</h3>
               <div className="about-content">
                 <p>
-                  I'm 29 years old. I'm really passionate about coding & web
+                  I'm really passionate about web
                   development. I'm Egyptian, and I live in Cairo currently. I'm
-                  an active & quick learner. I'm a hardworking web developer.
+                  an active & quick learner. And a good team member.
                 </p>
               </div>
             </div>
