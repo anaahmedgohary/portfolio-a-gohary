@@ -9,10 +9,30 @@ function Bodyb()
         <h1 className="proj-title">My Projects</h1>
 
         <div className="container proj-cards">
-          <div class="card proj-card">
+          <div class="card proj-card pc01">
             <img
               class="card-img-top card-image"
-              src="./images/vanillaShahdResturant.jpg"
+              src="./images/menusvercel.jpg"
+              alt="website screenpshot"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Menus web app with (REACT)</h5>
+              <p class="card-text">
+                Project of web app for Menus made with REACT.JS framework , Bootstrap & SASS.
+              </p>
+              <a
+                href="https://menusapp-ahmedgohary.vercel.app"
+                class="btn btn-primary"
+              >
+                Link to project
+              </a>
+            </div>
+          </div>
+
+          <div class="card proj-card pc02">
+            <img
+              class="card-img-top card-image"
+              src="./images/shahd01.jpg"
               alt="website screenpshot"
             />
             <div class="card-body">
@@ -35,17 +55,17 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj-card">
+          <div class="card proj-card pc03">
             <img
               class="card-img-top card-image"
-              src="./images/ScreenshotREACTaShahd.jpg"
+              src="./images/reactshahd.jpg"
               alt="website screenpshot"
             />
             <div class="card-body">
               <h5 class="card-title">resturant web app with Cart (REACT)</h5>
               <p class="card-text">
-                Project of website for resturant web app with dynamic Cart made with REACT JS
-                framework.
+                Project of website for resturant web app with dynamic Cart made
+                with REACT JS framework.
               </p>
               <a
                 href="https://react-restaurant-git-master-ahmedgohary.vercel.app/"
@@ -56,10 +76,10 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj-card">
+          <div class="card proj-card pc04">
             <img
               class="card-img-top card-image"
-              src="./images/zagreview.jpg"
+              src="./images/reviewer01.JPG"
               alt="website screenpshot"
             />
             <div class="card-body">
@@ -77,7 +97,7 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj-card">
+          <div class="card proj-card pc05">
             <img
               class="card-img-top card-image"
               src="./images/reviewSite.jpg"
@@ -96,29 +116,6 @@ function Bodyb()
           </div>
         </div>
         <div>
-                    
-        <div class="card proj-card">
-            <img
-              class="card-img-top card-image"
-              src="./images/menusvercel.jpg"
-              alt="website screenpshot"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Menus web app with (REACT)</h5>
-              <p class="card-text">
-                Project of web app for Menus made with REACT.JS
-                framework.
-              </p>
-              <a
-                href="https://menusapp-ahmedgohary.vercel.app"
-                class="btn btn-primary"
-              >
-                Link to project
-              </a>
-            </div>
-          </div>
-    
-    
           {/* <div>
                     <h1>
                         Customer reviews web app with vanilla Javascript

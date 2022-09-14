@@ -138,10 +138,10 @@ header .und-pic .contact-container p {
 }
 .sub-header .alll-cards {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border: solid 25px;
   border-radius: 13%;
+  width: 100%;
 }
 .sub-header .alll-cards .about-cart {
   border: solid;
@@ -152,21 +152,21 @@ header .und-pic .contact-container p {
   margin-bottom: 2%;
 }
 .sub-header .alll-cards .about-cart .about-img {
-  width: 60%;
-  max-width: 200px;
+  width: 40%;
+  max-width: 140px;
   margin: auto;
   border-radius: 50%;
   margin-top: 1%;
 }
 .sub-header .alll-cards .about-cart .card-title {
-  font-size: 3vw;
+  font-size: 1.2rem;
   border-top: solid;
   border-bottom: solid;
 }
 .sub-header .alll-cards .about-cart .about-content {
   text-align: center;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 0.8rem;
   background-color: antiquewhite;
 }
 .sub-header .alll-cards .skil-cart {
@@ -179,26 +179,190 @@ header .und-pic .contact-container p {
 .sub-header .alll-cards .skil-cart .mcard-body {
   text-align: center;
   height: 65%;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 .sub-header .alll-cards .skil-cart .mcard-body :hover {
   background-color: bisque;
 }
 .sub-header .alll-cards .skil-cart .mcard-body .card-title {
-  font-size: 2.5vw;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .sub-header .alll-cards .skil-cart .mcard-body p {
-  font-size: 2.5vw;
+  font-size: 1rem;
   font-weight: bolder;
   width: 100%;
   border: solid;
+  border-radius: 20px;
   text-align: center;
 }
 .sub-header .alll-cards .sskills {
   width: 100%;
   border-radius: 50%;
   margin-top: 1%;
+}
+
+@media screen and (max-width: 390px) {
+  .sub-header .alll-cards {
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    min-width: 100vw;
+  }
+  .sub-header .alll-cards .skil-cart {
+    min-width: 90%;
+    max-width: 99%;
+    height: 100%;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    margin: auto;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body p {
+    max-width: 50%;
+    min-width: 49%;
+    margin: auto;
+    margin-bottom: 1%;
+  }
+  .sub-header .alll-cards .sskills {
+    max-width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .sub-header .alll-cards .about-cart {
+    border: solid;
+    text-align: center;
+    max-width: 99%;
+    min-width: 90%;
+  }
+  .sub-header .alll-cards .about-cart .about-img {
+    max-height: 20%;
+    max-width: 24%;
+    margin: auto;
+    border-radius: 50px 50px;
+    margin-top: 1%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .sub-header .alll-cards {
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    min-width: 100vw;
+  }
+  .sub-header .alll-cards .skil-cart {
+    min-width: 90%;
+    max-width: 99%;
+    height: 100%;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body p {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1%;
+  }
+  .sub-header .alll-cards .sskills {
+    max-width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .sub-header .alll-cards .about-cart {
+    border: solid;
+    text-align: center;
+    max-width: 99%;
+    min-width: 90%;
+  }
+  .sub-header .alll-cards .about-cart .about-img {
+    max-height: 20%;
+    max-width: 24%;
+    margin: auto;
+    border-radius: 50px 50px;
+    margin-top: 1%;
+  }
+}
+@media screen and (max-width: 260px) {
+  .sub-header .alll-cards {
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    min-width: 100vw;
+  }
+  .sub-header .alll-cards .skil-cart {
+    min-width: 98%;
+    max-width: 99%;
+    height: 100%;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+    margin: auto;
+  }
+  .sub-header .alll-cards .skil-cart .mcard-body p {
+    min-width: 100%;
+    margin: auto;
+    margin-bottom: 1%;
+  }
+  .sub-header .alll-cards .sskills {
+    max-width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .sub-header .alll-cards .about-cart {
+    border: solid;
+    text-align: center;
+    max-width: 99%;
+    min-width: 98%;
+  }
+  .sub-header .alll-cards .about-cart .about-img {
+    max-height: 20%;
+    max-width: 24%;
+    margin: auto;
+    border-radius: 50px 50px;
+    margin-top: 1%;
+  }
+}
+@media screen and (max-width: 290px) {
+  .und-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .contact-container {
+    min-width: 80vw;
+    min-height: 20rem;
+  }
+  .contact-container p {
+    flex-wrap: wrap;
+    word-break: break-all;
+    line-break: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

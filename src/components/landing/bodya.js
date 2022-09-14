@@ -13,14 +13,14 @@ function Bodya() {
               alt="My Skills"
             />
             <div className="card-body mcard-body">
-              <h5 className="card-title">My Skills</h5>
-              <p>HTML</p>
-              <p>CSS</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
               <p>SASS</p>
               <p>BootStrap</p>
               <p>JavaScript</p>
-              <p>REACT.JS</p>
-              <p>GIMP</p>
+              <p>jQuery</p>
+              <p>REACT.js</p>
+              <p>MySQL</p>
               <p>PHP</p>
               <p>Git</p>
             </div>
