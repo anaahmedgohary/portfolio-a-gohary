@@ -9,7 +9,7 @@ function Bodyb()
         <h1 className="proj-title">My Projects</h1>
 
         <div className="container proj-cards">
-          <div class="card proj1-card">
+          <div class="card proj-card">
             <img
               class="card-img-top card-image"
               src="./images/vanillaShahdResturant.jpg"
@@ -35,7 +35,7 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj2-card">
+          <div class="card proj-card">
             <img
               class="card-img-top card-image"
               src="./images/ScreenshotREACTaShahd.jpg"
@@ -56,7 +56,7 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj3-card">
+          <div class="card proj-card">
             <img
               class="card-img-top card-image"
               src="./images/zagreview.jpg"
@@ -77,7 +77,7 @@ function Bodyb()
             </div>
           </div>
 
-          <div class="card proj4-card">
+          <div class="card proj-card">
             <img
               class="card-img-top card-image"
               src="./images/reviewSite.jpg"
@@ -97,7 +97,7 @@ function Bodyb()
         </div>
         <div>
                     
-        <div class="card proj5-card">
+        <div class="card proj-card">
             <img
               class="card-img-top card-image"
               src="./images/menusvercel.jpg"
