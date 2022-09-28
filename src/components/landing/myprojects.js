@@ -18,7 +18,8 @@ export default function MyProjects()
             <div class="card-body">
               <h5 class="card-title">Menus web app with (REACT)</h5>
               <p class="card-text">
-                Project of web app for Menus made with REACT.JS framework , Bootstrap & SASS.
+                Project of web app for Menus made with REACT.JS framework ,
+                Bootstrap & SASS.
               </p>
               <a
                 href="https://menusapp-ahmedgohary.vercel.app"
@@ -58,7 +59,7 @@ export default function MyProjects()
           <div class="card proj-card pc03">
             <img
               class="card-img-top card-image"
-              src="./images/reactshahd.jpg"
+              src="./images/reactshahdThump.png"
               alt="website screenpshot"
             />
             <div class="card-body">
@@ -79,7 +80,7 @@ export default function MyProjects()
           <div class="card proj-card pc04">
             <img
               class="card-img-top card-image"
-              src="./images/reviewer01.JPG"
+              src="./images/reviewsThump.png"
               alt="website screenpshot"
             />
             <div class="card-body">
@@ -97,7 +98,7 @@ export default function MyProjects()
             </div>
           </div>
 
-          <div class="card proj-card pc05">
+          {/* <div class="card proj-card pc05">
             <img
               class="card-img-top card-image"
               src="./images/reviewSite.jpg"
@@ -115,7 +116,7 @@ export default function MyProjects()
             </div>
           </div>
         </div>
-        <div>
+        <div> */}
           {/* <div>
                     <h1>
                         Customer reviews web app with vanilla Javascript
