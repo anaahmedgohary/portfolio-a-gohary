@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: rgba(168, 43, 17, 0.8);
+  background-color: rgb(10, 46, 20);
   background-image: url(./images/lughtbubls.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -119,7 +119,7 @@ header .und-pic .contact-container p {
     min-height: 20rem;
   }
   .contact-container h3 {
-    color: black;
+    color: gold;
     font-size: 2rem;
   }
   .contact-container p {
@@ -127,7 +127,7 @@ header .und-pic .contact-container p {
   }
 }
 .sub-header {
-  background-color: rgb(168, 43, 17);
+  background-color: rgb(189, 147, 2);
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;

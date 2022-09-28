@@ -27,7 +27,8 @@ body{
 }
 
 header {
-    background-color: rgba(168, 43, 17, .8);
+    //background-color: rgba(168, 43, 17, .8);
+    background-color: rgba(10, 46, 20, 1);
     background-image: url(./images/lughtbubls.jpg);
     background-size: cover;
     background-blend-mode: multiply;
@@ -148,7 +149,7 @@ header {
         min-height: 20rem;
         h3{
             
-            color: black;
+            color: gold;
             font-size: 2rem;
         }
         p{
@@ -159,7 +160,7 @@ header {
 }
 
 .sub-header {
-    background-color: $guccired;
+    background-color: $gucciyellow;
     width: 100%;
     height: fit-content;
     padding-top: 2%;
