@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from './components/landing/header'
 import Bodya from './components/landing/bodya';
-import Bodyb from './components/landing/bodyb';
+import MyProjects from "./components/landing/myprojects";
 
 const Landing = () =>
 {
     return (
-        <div>
-            <Header />
-            <Bodya />
-            <Bodyb />
-        </div>
+      <div>
+        <Header />
+        <Bodya />
+        <MyProjects />
+      </div>
     );
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./style/bodybstyle.css"
 
-function Bodyb()
+export default function MyProjects()
 {
     return (
       <div className="proj-body">
@@ -134,4 +134,4 @@ function Bodyb()
     );
 }
 
-export default Bodyb
+
