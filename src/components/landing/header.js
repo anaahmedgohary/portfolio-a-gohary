@@ -17,13 +17,21 @@ function Header()
             <div class="hi-myname">
               <img src="./images/Hi-my-name-is-Ahmed-8-10-20225.png" alt="" />
             </div>
-            
+
             <div class="contact-container">
               <h3>Contact Information</h3>
-              <p class="info-row"><strong>Email:</strong> gogoahmed13@gmail.com</p>
-              <p class="info-row"><strong>Phone:</strong> +201155267277</p>
-              <p class="info-row"><strong>Address:</strong> Cairo, Egypt</p>
-              <p class="info-row"><strong>Github:</strong> github.com/anaahmedgohary</p>
+              <p class="info-row">
+                <strong>Email:</strong> gogoahmed13@gmail.com
+              </p>
+              <p class="info-row">
+                <strong>Phone:</strong> +201090371068
+              </p>
+              <p class="info-row">
+                <strong>Address:</strong> Cairo, Egypt
+              </p>
+              <p class="info-row">
+                <strong>Github:</strong> github.com/anaahmedgohary
+              </p>
             </div>
           </div>
         </header>
