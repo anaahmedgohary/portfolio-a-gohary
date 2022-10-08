@@ -8,7 +8,7 @@ body {
 
 header {
   background-color: rgb(10, 46, 20);
-  background-image: url(./images/lughtbubls.jpg);
+  background-image: url(/public/images/lughtbubls.png);
   background-size: cover;
   background-blend-mode: multiply;
   color: bisque;

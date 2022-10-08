@@ -10,12 +10,12 @@ function Header()
           <h6>Frontend Web Developer</h6>
 
           <div class="personal-image">
-            <img class="profile-img" src="./images/000.jpg" alt="" />
+            <img class="profile-img" src="./images/000.jpg" alt="profile pic" />
           </div>
 
           <div class="und-pic">
             <div class="hi-myname">
-              <img src="./images/Hi-my-name-is-Ahmed-8-10-20225.png" alt="" />
+              <img src="./images/Hi-my-name-is-Ahmed-8-10-20225.png" alt="hi my name is Ahmed" />
             </div>
 
             <div class="contact-container">
