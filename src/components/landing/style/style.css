@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Silkscreen&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,14 @@ header {
   color: white;
   padding: 3%;
   padding-bottom: 3%;
+}
+header .my-name-title {
+  color: rgb(150, 199, 64);
+  font-family: "Dosis", sans-serif;
+}
+header .my-job-title {
+  font-family: "Silkscreen", cursive;
+  color: rgba(234, 184, 90, 0.562);
 }
 header .personal-image {
   margin: auto;
@@ -37,46 +47,33 @@ header .und-pic {
   align-items: center;
   gap: 20%;
 }
-header .und-pic .hi-myname {
-  max-height: 25vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .und-pic .hi-myname img {
-  width: 30%;
-  border-radius: 10%;
-}
 header .und-pic .contact-container {
-  text-align: center;
   display: grid;
   place-items: center;
-  flex-wrap: wrap;
-  border-radius: 11px;
-  max-width: 40rem;
+  width: 100%;
 }
 header .und-pic .contact-container .info-rows {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 header .und-pic .contact-container .info-rows .info-row {
-  min-width: 300px;
+  min-height: 4.2rem;
+  min-width: 340px;
   max-width: 40%;
-  border: solid wheat;
-  border-radius: 100px 100px 15px 15px;
+  border: solid rgb(35, 103, 85);
+  border-radius: 0px 50px 0px 50px;
 }
 header .und-pic .contact-container .info-rows .info-row:hover {
   color: black;
   background-color: skyblue;
-  border-color: black;
+  border-color: transparent;
 }
 header .und-pic .contact-container h3 {
-  color: rgba(192, 145, 25, 0.886);
-  text-decoration: underline;
-  font-size: 1.6rem;
-  font-weight: bolder;
+  color: rgba(192, 145, 25, 0.6);
+  font-size: 1.4rem;
   text-align: center;
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

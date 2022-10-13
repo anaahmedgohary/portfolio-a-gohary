@@ -6,8 +6,8 @@ function Header()
     return (
       <>
         <header className="mheader">
-          <h1>Ahmed Gohary</h1>
-          <h6>Frontend Web Developer</h6>
+          <h1 className='my-name-title'>Ahmed Gohary</h1>
+          <h6 className='my-job-title'>Frontend Web Developer</h6>
 
           <div className="personal-image">
             <img className="profile-img" src="./images/000.jpg" alt="profile pic" />
