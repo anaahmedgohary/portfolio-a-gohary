@@ -86,10 +86,15 @@ header {
                 justify-content: center;
                 gap: 20px;
                 width: 100%;
+                margin-inline: auto;
+                border-top: rgba(192, 145, 25, 0.6) solid;
+                
                 .info-row{
                     min-height: 4.2rem;
-                    min-width: 340px;
-                    max-width:40%;
+                    min-width: 300px;
+                    padding-inline: 2rem;
+                    max-width:20%;
+                    margin-inline: auto;
                     border: solid rgb(35, 103, 85);
                     border-radius: 0px 50px 0px 50px;
                     &:hover{
@@ -116,7 +121,7 @@ header {
                 line-break: auto;
                 word-wrap: break-word;
                 //white-space: no-wrap;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 font-family: 'Courier New', Courier, monospace;
                 width: 100%;
                 text-align: center;

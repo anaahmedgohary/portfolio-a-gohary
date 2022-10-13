@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./style/bodybstyle.css"
+import "./style/myprojects/bodybstyle.css"
 
 export default function MyProjects()
 {

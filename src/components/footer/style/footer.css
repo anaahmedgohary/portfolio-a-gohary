@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Raleway:ital,wght@1,100&family=Silkscreen&display=swap");
 .portfolio-footer {
-  background: linear-gradient(rgb(10, 106, 86), white);
-  margin-bottom: 0;
+  background: linear-gradient(rgb(10, 106, 86), black);
+  font-family: "Raleway", sans-serif;
+  padding-top: 6%;
+  padding-bottom: 4%;
+  border-bottom: rgb(35, 103, 85) solid 8px;
 }
 
 .my-contacts {
@@ -8,13 +12,35 @@
 }
 .my-contacts h5 {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: green;
+  border-bottom: solid;
+  max-width: 1000px;
+  min-width: 300px;
+  margin-inline: auto;
+}
+
+.footer-CE-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: solid;
+  border-radius: 12px 12px 0% 0%;
 }
 
 .footer-info-row {
   text-align: center;
   display: grid;
   place-items: center;
+  margin: 0;
+  padding: 0;
+  color: orange;
 }
 .footer-info-row a {
   text-decoration: none;
+  min-width: 16rem;
+  max-width: 320px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }/*# sourceMappingURL=footer.css.map */
