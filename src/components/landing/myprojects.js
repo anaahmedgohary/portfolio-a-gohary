@@ -63,7 +63,7 @@ export default function MyProjects()
               alt="website screenpshot"
             />
             <div className="card-body">
-              <h5 className="card-title">resturant web app with Cart (REACT)</h5>
+              <h5 className="card-title">Resturant web app with Cart (REACT)</h5>
               <p className="card-text">
                 Project of website for resturant web app with dynamic Cart made
                 with REACT JS framework.

@@ -29,7 +29,7 @@
 .proj-cards .card .card-image {
   min-height: 255px;
   max-height: 420px;
-  max-width: 98%;
+  max-width: 100%;
   margin-bottom: auto;
   margin-inline: auto;
   border: solid gold;
