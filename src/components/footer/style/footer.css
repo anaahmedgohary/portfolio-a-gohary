@@ -1,0 +1,20 @@
+.portfolio-footer {
+  background: linear-gradient(rgb(10, 106, 86), white);
+  margin-bottom: 0;
+}
+
+.my-contacts {
+  text-decoration: none;
+}
+.my-contacts h5 {
+  text-align: center;
+}
+
+.footer-info-row {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.footer-info-row a {
+  text-decoration: none;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,9 +1,33 @@
 import React from 'react'
+// import { useState } from 'react';
 import "./style/style.css";
 
-function Bodya() {
+function Bodya()
+{
+  
+  //const [oshow, setOshow] = useState("ohide");
+
+  // const observer = new IntersectionObserver((entries) =>
+  // {
+  //   entries.forEach((entry) =>
+  //   {
+  //     console.log(`entry: ${entry}`)
+  //     if (entry.isIntersecting)
+  //     {
+  //       setOshow('oShow')
+  //       entry.target.classList.add(oshow);
+  //     } 
+  //     // 
+  //   })
+  // });
+
+  // const hiddenEls = document.querySelectorAll('.oHide');
+  // hiddenEls.forEach((el)=> observer.observe(el));
+
+
+
   return (
-    <>
+    
       <div className="sub-header">
         <div className="alll-cards container">
           <div className="card skil-cart">
@@ -45,7 +69,7 @@ function Bodya() {
           </div>
         </div>
       </div>
-    </>
+    
   );
 }
 

@@ -5,33 +5,35 @@ function Header()
 {
     return (
       <>
-        <header class="mheader">
+        <header className="mheader">
           <h1>Ahmed Gohary</h1>
           <h6>Frontend Web Developer</h6>
 
-          <div class="personal-image">
-            <img class="profile-img" src="./images/000.jpg" alt="profile pic" />
+          <div className="personal-image">
+            <img className="profile-img" src="./images/000.jpg" alt="profile pic" />
           </div>
 
-          <div class="und-pic">
-            <div class="hi-myname">
-              <img src="./images/Hi-my-name-is-Ahmed-8-10-20225.png" alt="hi my name is Ahmed" />
-            </div>
-
-            <div class="contact-container">
+          <div className="und-pic">
+            <div className="contact-container">
               <h3>Contact Information</h3>
-              <p class="info-row">
-                <strong>Email:</strong> gogoahmed13@gmail.com
-              </p>
-              <p class="info-row">
-                <strong>Phone:</strong> +201090371068
-              </p>
-              <p class="info-row">
-                <strong>Address:</strong> Cairo, Egypt
-              </p>
-              <p class="info-row">
-                <strong>Github:</strong> github.com/anaahmedgohary
-              </p>
+              <div className='info-rows'>
+                <p className="info-row">
+                  <strong>Email:</strong> gogoahmed13@gmail.com
+                </p>
+                <p className="info-row">
+                  <strong>Phone:</strong> +201090371068
+                </p>
+                <p className="info-row">
+                  <strong>Address:</strong> Cairo, Egypt
+                </p>
+                <p className="info-row">
+                  <strong>
+                    <a className='header-con-link' href="https://www.linkedin.com/in/ahmed-gohary-a67963192/" target="_blank" rel="noopener noreferrer">
+                    Linkedin
+                    </a>
+                  </strong>
+                </p>
+              </div>
             </div>
           </div>
         </header>

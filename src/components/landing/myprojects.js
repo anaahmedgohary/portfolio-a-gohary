@@ -8,40 +8,40 @@ export default function MyProjects()
       <div className="proj-body">
         <h1 className="proj-title">My Projects</h1>
 
-        <div className="container proj-cards">
-          <div class="card proj-card pc01">
+        <div className="proj-cards">
+          <div className="card proj-card pc01">
             <img
-              class="card-img-top card-image"
+              className="card-img-top card-image"
               src="./images/menusvercel.jpg"
               alt="website screenpshot"
             />
-            <div class="card-body">
-              <h5 class="card-title">Menus web app with (REACT)</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title">Menus web app with (REACT)</h5>
+              <p className="card-text">
                 Project of web app for Menus made with REACT.JS framework ,
                 Bootstrap & SASS.
               </p>
               <a
                 href="https://menusapp-ahmedgohary.vercel.app"
-                class="btn btn-primary"
+                className="btn btn-primary"
               >
                 Link to project
               </a>
             </div>
           </div>
 
-          <div class="card proj-card pc02">
+          <div className="card proj-card pc02">
             <img
-              class="card-img-top card-image"
+              className="card-img-top card-image"
               src="./images/shahd01.jpg"
               alt="website screenpshot"
             />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div className="card-body">
+              <h5 className="card-title">
                 Web app for online shopping. [MySQL DB. PHP. local storage.
                 Paypal.]
               </h5>
-              <p class="card-text">
+              <p className="card-text">
                 Project of website for online shopping. Connected to MySQL
                 Database. Stores Cart data in local storage. Added Paypal
                 Payment method. Made with [PHP, HTML, JavaScript, CSS, MySQL,
@@ -49,68 +49,68 @@ export default function MyProjects()
               </p>
               <a
                 href="http://shahdresturant.epizy.com/"
-                class="btn btn-primary"
+                className="btn btn-primary"
               >
                 Link to project
               </a>
             </div>
           </div>
 
-          <div class="card proj-card pc03">
+          <div className="card proj-card pc03">
             <img
-              class="card-img-top card-image"
+              className="card-img-top card-image"
               src="./images/reactshahdThump.png"
               alt="website screenpshot"
             />
-            <div class="card-body">
-              <h5 class="card-title">resturant web app with Cart (REACT)</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title">resturant web app with Cart (REACT)</h5>
+              <p className="card-text">
                 Project of website for resturant web app with dynamic Cart made
                 with REACT JS framework.
               </p>
               <a
                 href="https://react-restaurant-git-master-ahmedgohary.vercel.app/"
-                class="btn btn-primary"
+                className="btn btn-primary"
               >
                 Link to project
               </a>
             </div>
           </div>
 
-          <div class="card proj-card pc04">
+          <div className="card proj-card pc04">
             <img
-              class="card-img-top card-image"
+              className="card-img-top card-image"
               src="./images/reviewsThump.png"
               alt="website screenpshot"
             />
-            <div class="card-body">
-              <h5 class="card-title">
+            <div className="card-body">
+              <h5 className="card-title">
                 Customer reviews web app, connected to MySQL Database. And
                 Backend API.
               </h5>
-              <p class="card-text">
+              <p className="card-text">
                 Project of website for Customer reviews made with with [PHP,
                 HTML, SASS, JavaScript, CSS, MySQL, jQuery].
               </p>
-              <a href="http://review-app.epizy.com/" class="btn btn-primary">
+              <a href="http://review-app.epizy.com/" className="btn btn-primary">
                 Link to project
               </a>
             </div>
           </div>
 
-          {/* <div class="card proj-card pc05">
+          {/* <div className="card proj-card pc05">
             <img
-              class="card-img-top card-image"
+              className="card-img-top card-image"
               src="./images/reviewSite.jpg"
               alt="website screenpshot"
             />
-            <div class="card-body">
-              <h5 class="card-title">simple reviews web app with jQuery</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title">simple reviews web app with jQuery</h5>
+              <p className="card-text">
                 Project of website for Customer reviews made with with [jQuery,
                 HTML, CSS].
               </p>
-              <a href="/review-app" class="btn btn-primary">
+              <a href="/review-app" className="btn btn-primary">
                 Link to project
               </a>
             </div>

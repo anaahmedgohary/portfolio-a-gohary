@@ -2,16 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-}
-
 header {
   background-color: rgb(10, 46, 20);
   background-image: url(/public/images/lughtbubls.png);
   background-size: cover;
   background-blend-mode: multiply;
-  color: bisque;
+  color: white;
   padding: 3%;
   padding-bottom: 3%;
 }
@@ -24,60 +20,77 @@ header .personal-image {
   display: grid;
   place-items: center;
   margin-bottom: 5%;
+  color: gold;
 }
 header .personal-image .profile-img {
   height: 18vw;
   width: 18vw;
   border-radius: 50%;
 }
+header .header-con-link {
+  text-decoration: none;
+  color: antiquewhite;
+}
 header .und-pic {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20%;
 }
 header .und-pic .hi-myname {
   max-height: 25vw;
-  width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .und-pic .hi-myname img {
-  width: 100%;
-  max-height: 25vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 30%;
   border-radius: 10%;
 }
 header .und-pic .contact-container {
   text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   flex-wrap: wrap;
   border-radius: 11px;
-  width: 42%;
   max-width: 40rem;
 }
+header .und-pic .contact-container .info-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+header .und-pic .contact-container .info-rows .info-row {
+  min-width: 300px;
+  max-width: 40%;
+  border: solid wheat;
+  border-radius: 100px 100px 15px 15px;
+}
+header .und-pic .contact-container .info-rows .info-row:hover {
+  color: black;
+  background-color: skyblue;
+  border-color: black;
+}
 header .und-pic .contact-container h3 {
+  color: rgba(192, 145, 25, 0.886);
   text-decoration: underline;
   font-size: 1.6rem;
   font-weight: bolder;
   text-align: center;
   margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 header .und-pic .contact-container p {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   line-break: auto;
   word-wrap: break-word;
   font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -91,7 +104,6 @@ header .und-pic .contact-container p {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     flex-direction: column;
   }
   .contact-container {
@@ -111,7 +123,6 @@ header .und-pic .contact-container p {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     flex-direction: column;
   }
   .contact-container {
@@ -127,7 +138,7 @@ header .und-pic .contact-container p {
   }
 }
 .sub-header {
-  background-color: rgb(189, 147, 2);
+  background: linear-gradient(rgb(5, 22, 5), rgb(4, 22, 9), darkolivegreen, white, white, rgb(10, 106, 86));
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -139,7 +150,6 @@ header .und-pic .contact-container p {
 .sub-header .alll-cards {
   display: flex;
   align-items: center;
-  border: solid 25px;
   border-radius: 13%;
   width: 80%;
 }
@@ -172,7 +182,7 @@ header .und-pic .contact-container p {
   background-color: antiquewhite;
 }
 .sub-header .alll-cards .skil-cart {
-  background-color: rgba(0, 210, 142, 0.6);
+  background-color: transparent;
   width: 25%;
   height: 100%;
   margin-top: 2%;
@@ -407,7 +417,6 @@ header .und-pic .contact-container p {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     flex-direction: column;
   }
   .contact-container {
@@ -424,4 +433,12 @@ header .und-pic .contact-container p {
     line-break: anywhere;
     word-wrap: break-word;
   }
+}
+.oShow {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.oHide {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
