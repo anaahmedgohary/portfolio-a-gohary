@@ -59,7 +59,7 @@ export default function MyProjects()
           <div className="card proj-card pc03">
             <img
               className="card-img-top card-image"
-              src="./images/reactshahdThump.png"
+              src="./images/reactRestaurantThump.png"
               alt="website screenpshot"
             />
             <div className="card-body">
