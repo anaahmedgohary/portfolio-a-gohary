@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 // import { useState } from 'react';
 import "./style/style.css";
 
 function Bodya()
 {
-  
+
   //const [oshow, setOshow] = useState("ohide");
 
   // const observer = new IntersectionObserver((entries) =>
@@ -27,49 +27,56 @@ function Bodya()
 
 
   return (
-    
-      <div className="sub-header">
-        <div className="alll-cards container">
-          <div className="card skil-cart">
-            <img
-              className="card-img-top sskills"
-              src="./images/Skills2.png"
-              alt="My Skills"
-            />
-            <div className="card-body mcard-body">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>SASS</p>
-              <p>BootStrap</p>
-              <p>JavaScript</p>
-              <p>jQuery</p>
-              <p>REACT.js</p>
-              <p>MySQL</p>
-              <p>PHP</p>
-              <p>Git</p>
-            </div>
-          </div>
 
-          <div className="card about-cart">
-            <img
-              className="card-img-top about-img"
-              src="./images/facerj.jpg"
-              alt="profile"
-            />
-            <div className="card-body">
-              <h3 className="card-title">About Me</h3>
-              <div className="about-content">
-                <p>
-                  I'm really passionate about web
-                  development. I'm Egyptian, and I live in Cairo currently. I'm
-                  an active & quick learner. And a good team member.
-                </p>
-              </div>
+    <div className="sub-header">
+      <div className="alll-cards">
+        <div className="skills-card">
+          <img
+            className="card-img-top img-sskills"
+            src="./images/Skills04.png"
+            alt="My Skills"
+          />
+          <div className="skills-div">
+            <p className='my-skill'>HTML</p>
+            <p className='my-skill'>CSS</p>
+            <p className='my-skill'>JavaScript</p>
+            <p className='my-skill'>jQuery</p>
+            <p className='my-skill'>Git</p>
+            <p className='my-skill'>Github</p>
+            <p className='my-skill'>SASS.scss</p>
+            <p className='my-skill'>BootStrap</p>
+            <p className='my-skill'>REACT.js</p>
+            <p className='my-skill'>Adobe Photoshop</p>
+            <p className='my-skill'>Adobe Illustrator</p>
+            <p className='my-skill'>Adobe XD</p>
+            <p className='my-skill'>Adobe Premiere</p>
+            <p className='my-skill'>GIMP</p>
+            <p className='my-skill'>Microsoft Office</p>
+            <p className='my-skill'>MySQL</p>
+            <p className='my-skill'>PHP</p>
+          </div>
+        </div>
+
+        <div className="about-me-div">
+          <img
+            className="card-img-top about-img"
+            src="./images/facerj.jpg"
+            alt="profile"
+          />
+          <div className="card-body">
+            <h3 className="card-title">About Me</h3>
+            <div className="about-content">
+              <p>
+                Hello, my name is Ahmed Gohary and I'm a fontend web developer. I'm really passionate about web
+                development. I'm Egyptian, and I live in Cairo currently. I'm
+                an active & quick learner. And a good team member.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    
+    </div>
+
   );
 }
 

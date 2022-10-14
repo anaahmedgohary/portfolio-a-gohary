@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 $gucciyellow: rgba(189, 147, 2, 1);
 $guccigreen: rgba(10, 106, 86, 1);
 $guccired: rgba(168, 43, 17, 1);
@@ -61,7 +64,8 @@ header {
 
     .header-con-link{
         text-decoration: none;
-        color: antiquewhite;
+        color: green;
+        font-weight: bolder;
     }
 
     .und-pic {
@@ -97,6 +101,7 @@ header {
                     margin-inline: auto;
                     border: solid rgb(35, 103, 85);
                     border-radius: 0px 50px 0px 50px;
+                    transition: all 500ms;
                     &:hover{
                         color: black;
                         background-color: skyblue;
@@ -132,432 +137,182 @@ header {
 
         }
     }
-
-
-
 }
-@media screen and (max-width: 650px) {
-    .und-pic {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alll-cards {
+    @include FlexCenters();
+    flex-wrap: wrap;
+    //border: solid 25px;
+    width: 100%;
+    margin: auto;
+}
+
+.skills-card{
+    width: 100%;
+    @include FlexCenters();
+    flex-direction: column;
+    background-color: transparent; //rgba(0, 210, 142, .6);
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    .img-sskills{
+        max-width: 260px;
+        cursor: progress;
+    }
+}
+
+.skills-div {
+    @include FlexCenters();
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 90%;
+    margin-inline: auto;
+    transition: all 500ms;
+    color: rgb(249, 226, 94);
+    overflow: hidden;
+    //border: solid white;
+    :hover {
+        background-color: green;
+        color: white;
+        transition: all 500ms;
+    }
+    .my-skill {
         @include FlexCenters();
-        flex-direction: column;
+        font-size: 1.2rem;
+        max-width: 30%;
+        min-width: fit-content;
+        padding-inline: 0.5rem;
+        //font-weight: bolder;
+        font-family: 'Pacifico', cursive;
+        // -webkit-text-stroke-width: 0.8px;
+        // -webkit-text-stroke-color: black;
+    //border: solid rgba(218, 165, 32, 0.586);
+        border-radius: 20px;
+        text-align: center;
+        transition: all 500ms;
+        cursor: progress;
     }
-    .contact-container{
-        min-width: 80vw;
-        min-height: 20rem;
-        h3{
-            
-            color: black;
-            font-size: 2rem;
-        }
-        p{
-            font-size: 45%;
-        }
-    }
-    
+
 }
 
 
+.about-me-div {
+    //border: solid white;
+    text-align: center;
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 2%;
+    margin-inline: auto;
 
-@media screen and (max-width: 390px) {
-    .und-pic {
-        @include FlexCenters();
-        flex-direction: column;
+
+    .about-img {
+                width: 40%;
+                max-width: 140px;
+                margin: auto;
+                border: solid rgb(63, 22, 32);
+                border-radius: 500px 500px 100px 100px;
+                background-color: orchid;
+            }
+
+    .card-title {
+        width: 90%;
+        margin: auto;
+        font-size: 1.2rem;
+        border-bottom: solid;
+        font-family: 'Lobster', cursive;
     }
-    .contact-container{
-        min-width: 80vw;
-        min-height: 20rem;
-        h3{
-            
-            color: gold;
-            font-size: 2rem;
-        }
-        p{
-            font-size: 45%;
-        }
+
+    .about-content {
+        width: 90%;
+        margin: auto;
+        padding-inline: 4%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8rem;
+        background-color: rgba(0, 128, 128, 0.4);
     }
-    
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sub-header {
-    background: linear-gradient(rgb(5, 22, 5),rgb(4, 22, 9),darkolivegreen, white, white, rgb(10, 106, 86));
+    background: linear-gradient(rgb(5, 22, 5), rgb(4, 22, 9), darkolivegreen, rgb(156, 177, 156), rgb(156, 177, 156), rgb(10, 106, 86));
     width: 100%;
     height: fit-content;
     padding-top: 2%;
     padding-bottom: 5%;
     margin-bottom: 0%;
-
-
-    .alll-cards {
-        display: flex;
-        //justify-content: space-around;
-        align-items: center;
-        //border: solid 25px;
-        border-radius: 13%;
-        width: 80%;
-
-
-        .about-cart {
-            border: solid;
-            text-align: center;
-            max-width: 55%;
-            width: 45%;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            margin-left: auto;
-            margin-right: 5%;
-
-
-            .about-img {
-                width: 40%;
-                max-width: 140px;
-                margin: auto;
-                border-radius: 50px 50px;
-                margin-top: 01%;
-            }
-
-            .card-title {
-                font-size: 1.2rem;
-                border-top: solid;
-                border-bottom: solid;
-            }
-
-            .about-content {
-
-                text-align: center;
-                font-weight: bold;
-                font-size: 0.8rem;
-                background-color: antiquewhite;
-            }
-        }
-
-        .skil-cart {
-            background-color: transparent; //rgba(0, 210, 142, .6);
-            width: 25%;
-            height: 100%;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            margin-left: 10%;
-
-            .mcard-body {
-                text-align: center;
-                height: 65%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-
-
-                :hover {
-                    background-color: bisque;
-                }
-
-                .card-title {
-                    font-size: 1rem;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                }
-
-
-                p {
-                    font-size: 1rem;
-                    font-weight: bolder;
-                    width: 100%;
-                    border: solid;
-                    border-radius: 20px;
-                    text-align: center;
-
-                }
-
-            }
-
-        }
-
-        .sskills {
-            width: 100%;
-            border-radius: 50%;
-            margin-top: 01%;
-        }
-
-    }
-
-
-}
-
-@media screen and (max-width: 390px) {
-
-    .sub-header .alll-cards {
-        justify-content: center;
-        flex-direction: column;
-        border: none;
-        min-width: 100vw;
-
-        .skil-cart {
-                min-width: 90%;
-                max-width: 99%;
-                height: 100%;
-                margin: auto;
-                .mcard-body {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                min-width: 100%;
-                margin: auto;
-
-                    p {
-                        max-width: 50%;
-                        min-width: 49%;
-                        margin: auto;
-                        margin-bottom: 1%;
-                    }
-                }
-        }
-        .sskills {
-            max-width: 40%;
-            border-radius: 50%;
-            margin: auto;
-            margin-top: 1%;
-        }
-        
-        .about-cart {
-            border: solid;
-            text-align: center;
-            max-width: 99%;
-            min-width: 90%;
-            .about-img {
-                    max-height: 20%;
-                    max-width: 24%;
-                    margin: auto;
-                    border-radius: 50px 50px;
-                    margin-top: 01%;
-                }
-        }
-    }
-
-        
-                
-        
-
-}
-
-@media screen and (max-width: 780px) {
-
-    .sub-header .alll-cards {
-        justify-content: center;
-        flex-direction: column;
-        border: none;
-        min-width: 100vw;
-
-        .skil-cart {
-            min-width: 90%;
-            max-width: 99%;
-            height: 100%;
-            margin: auto;
-
-            .mcard-body {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 80%;
-                margin: auto;
-
-                p {
-                    max-width: 40%;
-                    margin: auto;
-                    margin-bottom: 1%;
-                }
-            }
-        }
-
-        .sskills {
-            max-width: 40%;
-            border-radius: 50%;
-            margin: auto;
-            margin-top: 1%;
-        }
-
-        .about-cart {
-            border: solid;
-            text-align: center;
-            max-width: 99%;
-            min-width: 90%;
-
-            .about-img {
-                max-height: 20%;
-                max-width: 24%;
-                margin: auto;
-                border-radius: 50px 50px;
-                margin-top: 01%;
-            }
-        }
-    }
-
-
-
-
-
-}
-
-@media screen and (max-width: 540px) {
-
-    .sub-header .alll-cards {
-        justify-content: center;
-        flex-direction: column;
-        border: none;
-        min-width: 100vw;
-
-        .skil-cart {
-            min-width: 90%;
-            max-width: 99%;
-            height: 100%;
-            margin: auto;
-
-            .mcard-body {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 80%;
-                margin: auto;
-
-                p {
-                    max-width: 40%;
-                    margin: auto;
-                    margin-bottom: 1%;
-                }
-            }
-        }
-
-        .sskills {
-            max-width: 40%;
-            border-radius: 50%;
-            margin: auto;
-            margin-top: 1%;
-        }
-
-        .about-cart {
-            border: solid;
-            text-align: center;
-            max-width: 99%;
-            min-width: 90%;
-
-            .about-img {
-                max-height: 20%;
-                max-width: 24%;
-                margin: auto;
-                border-radius: 50px 50px;
-                margin-top: 01%;
-            }
-        }
-    }
-
-
-
-
-
 }
 
 
 
-   
-@media screen and (max-width: 260px) {
-
-        .sub-header .alll-cards {
-            justify-content: center;
-            flex-direction: column;
-            border: none;
-            min-width: 100vw;
-
-            .skil-cart {
-                min-width: 98%;
-                max-width: 99%;
-                height: 100%;
-                margin: auto;
-
-                .mcard-body {
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    min-width: 100%;
-                    margin: auto;
-
-                    p {
-                        min-width: 100%;
-                        margin: auto;
-                        margin-bottom: 1%;
-                    }
-                }
-            }
-
-            .sskills {
-                max-width: 40%;
-                border-radius: 50%;
-                margin: auto;
-                margin-top: 1%;
-            }
-
-            .about-cart {
-                border: solid;
-                text-align: center;
-                max-width: 99%;
-                min-width: 98%;
-
-                .about-img {
-                    max-height: 20%;
-                    max-width: 24%;
-                    margin: auto;
-                    border-radius: 50px 50px;
-                    margin-top: 01%;
-                }
-            }
-        }
 
 
 
 
 
-    }
-
-@media screen and (max-width: 290px) {
-    .und-pic {
-        @include FlexCenters();
-        flex-direction: column;
-    }
-
-    .contact-container {
-        min-width: 99vw;
-        min-height: 20rem;
-        flex-wrap: wrap;
-            word-break: break-all;
-            line-break: anywhere;
-            word-wrap: break-word;
 
 
-        p {
-            flex-wrap: wrap;
-            word-break: break-all;
-            line-break: anywhere;
-            word-wrap: break-word;
-        }
-    }
 
-}
 
-.oShow{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.oShow {
     opacity: 1;
     transition: all 1s;
 }
 
-.oHide{
+.oHide {
     opacity: 0;
 }

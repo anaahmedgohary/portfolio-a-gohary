@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -39,7 +41,8 @@ header .personal-image .profile-img {
 }
 header .header-con-link {
   text-decoration: none;
-  color: antiquewhite;
+  color: green;
+  font-weight: bolder;
 }
 header .und-pic {
   display: flex;
@@ -69,6 +72,7 @@ header .und-pic .contact-container .info-rows .info-row {
   margin-inline: auto;
   border: solid rgb(35, 103, 85);
   border-radius: 0px 50px 0px 50px;
+  transition: all 500ms;
 }
 header .und-pic .contact-container .info-rows .info-row:hover {
   color: black;
@@ -100,46 +104,98 @@ header .und-pic .contact-container p {
   min-height: fit-content;
 }
 
-@media screen and (max-width: 650px) {
-  .und-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contact-container {
-    min-width: 80vw;
-    min-height: 20rem;
-  }
-  .contact-container h3 {
-    color: black;
-    font-size: 2rem;
-  }
-  .contact-container p {
-    font-size: 45%;
-  }
+.alll-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
-@media screen and (max-width: 390px) {
-  .und-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contact-container {
-    min-width: 80vw;
-    min-height: 20rem;
-  }
-  .contact-container h3 {
-    color: gold;
-    font-size: 2rem;
-  }
-  .contact-container p {
-    font-size: 45%;
-  }
+
+.skills-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+.skills-card .img-sskills {
+  max-width: 260px;
+  cursor: progress;
+}
+
+.skills-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 90%;
+  margin-inline: auto;
+  transition: all 500ms;
+  color: rgb(249, 226, 94);
+  overflow: hidden;
+}
+.skills-div :hover {
+  background-color: green;
+  color: white;
+  transition: all 500ms;
+}
+.skills-div .my-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  max-width: 30%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding-inline: 0.5rem;
+  font-family: "Pacifico", cursive;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 500ms;
+  cursor: progress;
+}
+
+.about-me-div {
+  text-align: center;
+  min-width: 300px;
+  max-width: 400px;
+  margin-top: 2%;
+  margin-inline: auto;
+}
+.about-me-div .about-img {
+  width: 40%;
+  max-width: 140px;
+  margin: auto;
+  border: solid rgb(63, 22, 32);
+  border-radius: 500px 500px 100px 100px;
+  background-color: orchid;
+}
+.about-me-div .card-title {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2rem;
+  border-bottom: solid;
+  font-family: "Lobster", cursive;
+}
+.about-me-div .about-content {
+  width: 90%;
+  margin: auto;
+  padding-inline: 4%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: rgba(0, 128, 128, 0.4);
+}
+
 .sub-header {
-  background: linear-gradient(rgb(5, 22, 5), rgb(4, 22, 9), darkolivegreen, white, white, rgb(10, 106, 86));
+  background: linear-gradient(rgb(5, 22, 5), rgb(4, 22, 9), darkolivegreen, rgb(156, 177, 156), rgb(156, 177, 156), rgb(10, 106, 86));
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -148,293 +204,7 @@ header .und-pic .contact-container p {
   padding-bottom: 5%;
   margin-bottom: 0%;
 }
-.sub-header .alll-cards {
-  display: flex;
-  align-items: center;
-  border-radius: 13%;
-  width: 80%;
-}
-.sub-header .alll-cards .about-cart {
-  border: solid;
-  text-align: center;
-  max-width: 55%;
-  width: 45%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: auto;
-  margin-right: 5%;
-}
-.sub-header .alll-cards .about-cart .about-img {
-  width: 40%;
-  max-width: 140px;
-  margin: auto;
-  border-radius: 50px 50px;
-  margin-top: 1%;
-}
-.sub-header .alll-cards .about-cart .card-title {
-  font-size: 1.2rem;
-  border-top: solid;
-  border-bottom: solid;
-}
-.sub-header .alll-cards .about-cart .about-content {
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-  background-color: antiquewhite;
-}
-.sub-header .alll-cards .skil-cart {
-  background-color: transparent;
-  width: 25%;
-  height: 100%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 10%;
-}
-.sub-header .alll-cards .skil-cart .mcard-body {
-  text-align: center;
-  height: 65%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.sub-header .alll-cards .skil-cart .mcard-body :hover {
-  background-color: bisque;
-}
-.sub-header .alll-cards .skil-cart .mcard-body .card-title {
-  font-size: 1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.sub-header .alll-cards .skil-cart .mcard-body p {
-  font-size: 1rem;
-  font-weight: bolder;
-  width: 100%;
-  border: solid;
-  border-radius: 20px;
-  text-align: center;
-}
-.sub-header .alll-cards .sskills {
-  width: 100%;
-  border-radius: 50%;
-  margin-top: 1%;
-}
 
-@media screen and (max-width: 390px) {
-  .sub-header .alll-cards {
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    min-width: 100vw;
-  }
-  .sub-header .alll-cards .skil-cart {
-    min-width: 90%;
-    max-width: 99%;
-    height: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body p {
-    max-width: 50%;
-    min-width: 49%;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  .sub-header .alll-cards .sskills {
-    max-width: 40%;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 1%;
-  }
-  .sub-header .alll-cards .about-cart {
-    border: solid;
-    text-align: center;
-    max-width: 99%;
-    min-width: 90%;
-  }
-  .sub-header .alll-cards .about-cart .about-img {
-    max-height: 20%;
-    max-width: 24%;
-    margin: auto;
-    border-radius: 50px 50px;
-    margin-top: 1%;
-  }
-}
-@media screen and (max-width: 780px) {
-  .sub-header .alll-cards {
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    min-width: 100vw;
-  }
-  .sub-header .alll-cards .skil-cart {
-    min-width: 90%;
-    max-width: 99%;
-    height: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body p {
-    max-width: 40%;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  .sub-header .alll-cards .sskills {
-    max-width: 40%;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 1%;
-  }
-  .sub-header .alll-cards .about-cart {
-    border: solid;
-    text-align: center;
-    max-width: 99%;
-    min-width: 90%;
-  }
-  .sub-header .alll-cards .about-cart .about-img {
-    max-height: 20%;
-    max-width: 24%;
-    margin: auto;
-    border-radius: 50px 50px;
-    margin-top: 1%;
-  }
-}
-@media screen and (max-width: 540px) {
-  .sub-header .alll-cards {
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    min-width: 100vw;
-  }
-  .sub-header .alll-cards .skil-cart {
-    min-width: 90%;
-    max-width: 99%;
-    height: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body p {
-    max-width: 40%;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  .sub-header .alll-cards .sskills {
-    max-width: 40%;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 1%;
-  }
-  .sub-header .alll-cards .about-cart {
-    border: solid;
-    text-align: center;
-    max-width: 99%;
-    min-width: 90%;
-  }
-  .sub-header .alll-cards .about-cart .about-img {
-    max-height: 20%;
-    max-width: 24%;
-    margin: auto;
-    border-radius: 50px 50px;
-    margin-top: 1%;
-  }
-}
-@media screen and (max-width: 260px) {
-  .sub-header .alll-cards {
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    min-width: 100vw;
-  }
-  .sub-header .alll-cards .skil-cart {
-    min-width: 98%;
-    max-width: 99%;
-    height: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-width: 100%;
-    margin: auto;
-  }
-  .sub-header .alll-cards .skil-cart .mcard-body p {
-    min-width: 100%;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  .sub-header .alll-cards .sskills {
-    max-width: 40%;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 1%;
-  }
-  .sub-header .alll-cards .about-cart {
-    border: solid;
-    text-align: center;
-    max-width: 99%;
-    min-width: 98%;
-  }
-  .sub-header .alll-cards .about-cart .about-img {
-    max-height: 20%;
-    max-width: 24%;
-    margin: auto;
-    border-radius: 50px 50px;
-    margin-top: 1%;
-  }
-}
-@media screen and (max-width: 290px) {
-  .und-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contact-container {
-    min-width: 99vw;
-    min-height: 20rem;
-    flex-wrap: wrap;
-    word-break: break-all;
-    line-break: anywhere;
-    word-wrap: break-word;
-  }
-  .contact-container p {
-    flex-wrap: wrap;
-    word-break: break-all;
-    line-break: anywhere;
-    word-wrap: break-word;
-  }
-}
 .oShow {
   opacity: 1;
   transition: all 1s;
