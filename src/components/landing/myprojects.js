@@ -33,7 +33,7 @@ export default function MyProjects()
           <div className="card proj-card pc02">
             <img
               className="card-img-top card-image"
-              src="./images/shahd01.jpg"
+              src="./images/shahd01.png"
               alt="website screenpshot"
             />
             <div className="card-body">
