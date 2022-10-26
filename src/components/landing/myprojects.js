@@ -17,7 +17,7 @@ export default function MyProjects()
         <div className="card proj-card pc01" data-aos='fade-up' data-aos-duration="500" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
-            src="./images/reactRestaurantThump.png"
+            src="./images/resta02.png"
             alt="website screenpshot"
           />
           <div className="card-body">
