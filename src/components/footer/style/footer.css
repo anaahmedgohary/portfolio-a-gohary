@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Raleway:ital,wght@1,100&family=Silkscreen&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .portfolio-footer {
   background: linear-gradient(rgb(10, 106, 86), black);
   font-family: "Raleway", sans-serif;
@@ -43,4 +55,134 @@
   min-width: 16rem;
   max-width: 320px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.message-sender {
+  color: white;
+  width: 80%;
+  min-width: 320px;
+  max-width: 1000px;
+  display: grid;
+  place-items: center;
+  margin-top: 5%;
+  margin-inline: auto;
+}
+.message-sender .mssageDiv {
+  width: 100%;
+}
+.message-sender .mssageDiv .mssage-form {
+  min-height: 20rem;
+  display: grid;
+  grid-template-columns: 4% 1fr 4% 1fr 4%;
+  grid-template-rows: 30% 50% 1fr;
+}
+.message-sender .mssageDiv .mssage-form div:not(:last-of-type) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.message-sender .mssageDiv .mssage-form div:not(:last-of-type) label {
+  align-self: end;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.message-sender .mssageDiv .mssage-form div:not(:last-of-type) input {
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  max-height: 2rem;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(1) {
+  grid-column: 2/3;
+  place-items: center;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(2) {
+  grid-column: 4/5;
+  place-items: center;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(3) {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  grid-template-rows: 16% 1fr;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(3) input {
+  text-align: center;
+  grid-row: 2/3;
+  max-height: 6rem;
+  font-size: 1.2rem;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(4) {
+  grid-column: 4/5;
+  display: grid;
+  padding-inline: 15%;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(4) button {
+  font-size: 1.6rem;
+  background-color: rgb(155, 243, 199);
+  width: 6rem;
+  height: 80%;
+  margin: auto;
+  border: solid;
+  -o-border-image: linear-gradient(lightsalmon, rgb(60, 95, 78));
+     border-image: linear-gradient(lightsalmon, rgb(60, 95, 78));
+  border-image-width: 4px;
+  border-image-outset: 0%;
+  border-image-repeat: stretch;
+  border-radius: 2px;
+  border-image-slice: 10 10;
+  box-shadow: 0px 1px 4px 1px rgb(155, 243, 199);
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(4) button:active {
+  box-shadow: 2px 2px 6px 5px lightsalmon;
+  background-color: lightsalmon;
+  -o-border-image: none;
+     border-image: none;
+  border-color: transparent;
+}
+.message-sender .mssageDiv .mssage-form div:nth-of-type(4) button:hover {
+  zoom: 1.04;
+}
+
+@media screen and (max-width: 350px) {
+  .mssage-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: red;
+  }
+  .mssage-form div {
+    flex: 1;
+    flex-basis: 0.2;
+  }
+}
+.thanks4msgDiv {
+  width: 100%;
+  position: relative;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanks4msgDiv #thanks4msg {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.thanks4msgDiv #thanks4msg h5 {
+  align-self: end;
+  margin: 0;
 }/*# sourceMappingURL=footer.css.map */

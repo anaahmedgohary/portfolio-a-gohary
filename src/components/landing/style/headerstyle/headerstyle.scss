@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+$gucciyellow: rgba(189, 147, 2, 1);
+$guccigreen: rgba(10, 106, 86, 1);
+$guccired: rgba(168, 43, 17, 1);
+
+@mixin FlexCenters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+$eleBlack: rgba(30, 30, 30, 1);
+$backColor: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+$wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    //background-color: rgba(168, 43, 17, .8);
+    background-color: rgba(10, 46, 20, 1);
+    background-image: url(/public/images/lughtbubls.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    // padding-inline: 10%;
+    min-height: 100vh;
+    @include FlexCenters();
+    flex-direction: column;
+
+    @include gridCenter();
+    justify-content: center;
+    align-items: center;
+    //grid-template-rows: 16% 64% 1fr;
+    grid-template-rows: 16% 1fr 1fr;
+    grid-template-rows: 16% 1fr 16%;
+
+    //border: solid red;
+    //padding-bottom: 3%;
+    div {
+        //border: solid white;
+        box-sizing: border-box;
+    }
+    .myName-job {
+        width: 100%;
+        align-self: end;
+        text-align: center;
+        border-bottom: solid 5px rgb(40, 40, 40);
+    }
+
+    .my-name-title {
+        color: rgb(150, 199, 64);
+        font-family: "Dosis", sans-serif;
+        //border: solid white;
+    }
+    .my-job-title {
+        font-family: "Silkscreen", cursive;
+        color: rgba(234, 184, 90, 0.562);
+    }
+
+    // .personal-image {
+    //     margin: auto;
+    //     border: solid;
+    //     height: 20vw;
+    //     width: 20vw;
+    //     border-radius: 50%;
+    //     display: grid;
+    //     place-items: center;
+    //     margin-bottom: 5%;
+    //     color: gold;
+
+    //     .profile-img {
+    //         height: 18vw;
+    //         width: 18vw;
+    //         border-radius: 50%;
+    //     }
+    // }
+
+    .und-pic {
+        align-self: stretch;
+        @include gridCenter();
+        // display: flex;
+        // align-items: flex-start;
+        // flex-grow: 1;
+        width: 100%;
+        //border: solid;
+
+        .contact-container {
+            align-self: stretch;
+            @include gridCenter();
+            grid-template-rows: 2rem 1fr;
+           // border: solid red;
+
+            //flex-direction: column;
+            width: 100%;
+            //max-width: 40rem;
+            //min-width: fit-content;
+
+            .info-rows {
+                align-self: center;
+                //justify-self: center
+                @include flexCenterWrap();
+                gap: 20px;
+                max-width: 96%;
+
+                .info-row {
+                    height: 4.2rem;
+                    border: solid rgb(35, 103, 85);
+                    border-radius: 0px 50px 0px 50px;
+                    transition: all 500ms;
+                    @include FlexCenters();
+                flex-direction: column;
+                flex-wrap: wrap;
+                line-break: auto;
+                word-wrap: break-word;
+                //white-space: no-wrap;
+                font-size: 1rem;
+                font-family: "Courier New", Courier, monospace;
+                min-width: 18rem;
+                text-align: center;
+                margin: 0;
+                text-align: center;
+                overflow: hidden;
+
+                    &:hover {
+                        color: black;
+                        background-color: skyblue;
+                        border-color: skyblue;
+                    }
+                }
+            }
+
+
+            .header-con-link {
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                // border:  solid;
+                width: 100%;
+                height: 100%;
+                font-size: 1.8rem;
+                border-radius: 0px 50px 0px 50px;
+                margin: 0;
+                text-align: center;
+                @include FlexCenters();
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+             h3 {
+                color: rgba(20, 56, 29, 1);
+                font-size: 1.4rem;
+                text-align: center;
+                margin: 0;
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            }
+        }
+    }
+
+    .arrowdown-div {
+        //  border: solid;
+        align-self: end;
+
+        .piecesDiv {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            @include gridCenter();
+            position: relative;
+            cursor: pointer;
+            animation: pouncer 800ms linear 100ms infinite alternate forwards;
+
+            .piece {
+                position: absolute;
+                border: solid yellowgreen;
+                border-width: 0 3px 3px 0;
+                padding: 6px;
+                transform: rotate(45deg);
+            }
+
+            span:nth-of-type(1) {
+                translate: 0% -50%;
+                transform: rotate(45deg);
+            }
+            span:nth-of-type(2) {
+                transform: rotate(45deg);
+            }
+            span:nth-of-type(3) {
+                translate: 0% 50%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+@keyframes pouncer {
+    0% {
+        translate: 0% -6%;
+    }
+
+    100% {
+        translate: 0% 10%;
+    }
+}

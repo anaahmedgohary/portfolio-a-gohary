@@ -3,11 +3,12 @@ import React from 'react';
 import "./style/style.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import pinkStrokes from "./style/images/pink-strokes.png";
 
 function Bodya()
 {
 
-  AOS.init(500);
+  AOS.init(2000);
   //const [oshow, setOshow] = useState("ohide");
 
   // const observer = new IntersectionObserver((entries) =>
@@ -33,8 +34,8 @@ function Bodya()
   return (
 
     <div className="sub-header">
-      <div className="alll-cards">
-        <div className="skills-card">
+      <div className="alll-cards" id='mySkillsA'>
+        <div className="skills-card" id='scrolledto'>
           <img
             className="card-img-top img-sskills"
             src="./images/Skills04.png"
@@ -42,8 +43,9 @@ function Bodya()
             data-aos='fade-down'
           />
           <div className="skills-div"
+            id='aboutMeA'
             data-aos='fade-up'
-            data-aos-duration="500">
+            data-aos-duration="2000">
             <p
               data-aos={faderight} className='my-skill'>HTML</p>
             <p
@@ -73,14 +75,14 @@ function Bodya()
         </div>
 
         <div className="about-me-div">
-          <img
+          {/* <img
             className="card-img-top about-img"
-            src="./images/facerj.jpg"
+            src={pinkStrokes}
             alt="profile"
             data-aos="fade-left"
-            data-aos-duration="1000"
-          />
-          <div className="card-body" data-aos="fade-right" data-aos-duration="1000">
+            data-aos-duration="2000"
+          /> */}
+          <div className="card-body" data-aos="fade-right" data-aos-duration="2000">
             <h3 className="card-title">About Me</h3>
             <div className="about-content">
               <p>

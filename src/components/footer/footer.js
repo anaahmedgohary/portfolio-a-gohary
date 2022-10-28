@@ -1,24 +1,45 @@
 import React from 'react';
 import "./style/footer.css";
 
-const Footer = () => {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// eslint-disable-next-line no-unused-vars
+import $ from "jquery";
+
+const Footer = () =>
+{
+    
+    AOS.init(1000);
+
+    function handelSubmitMsg(e)
+    {
+        e.preventDefault();
+        //alert('thank you!');
+        $('#thanks4msg').fadeToggle(1000);
+        $('#thanks4msg').fadeToggle(4000);
+
+    }
+
     return (
         <div className='portfolio-footer'>
-            <div className='my-contacts container'>
-                <h5>Contact Me</h5>
-                <div className='footer-CE-div'>
-                    <p className="footer-info-row">
+            <div className='my-contacts container' data-aos='fade-up' data-aos-duration='2000'>
+                <h5 id='contactMeA'>Contact Me</h5>
+                <div className='footer-CE-div' data-aos='flip-down'>
+
+                    <p className="footer-info-row" data-aos='flip-up'>
                         <label>Email</label>
                         <a className='btn-success btn' href="mailto:gogoahmed13@gmail.com" target="_blank" rel="noopener noreferrer">
                             gogoahmed13@gmail.com
                         </a>
                     </p>
-                    <p className="footer-info-row">
+
+                    <p className="footer-info-row" data-aos='flip-up'>
                         <label>Phone</label>
                         <a className='btn-success btn' href="tel:+201090371068">+201090371068</a>
                     </p>
                     
-                    <p className="footer-info-row">
+                    <p className="footer-info-row" data-aos='flip-up'>
                         <label>Linkedin</label>
                         <a className='btn-success btn' href="https://www.linkedin.com/in/ahmed-gohary-a67963192/" target="_blank" rel="noopener noreferrer">
                             Linkedin profile link
@@ -26,6 +47,40 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
+            <div className='message-sender'>
+                <div>
+                    <h4>Send me a message</h4>
+                </div>
+                <div className='mssageDiv'>
+                    <form className='mssage-form' onSubmit={handelSubmitMsg}>
+
+                        <div>
+                            <label className='form-label' htmlFor="Name">Name</label>
+                            <input className='form-input' type="text" required />
+                        </div>
+                        <div>
+                            <label className='form-label' htmlFor="Email">Email</label>
+                            <input className='form-input' type="text" required />
+                        </div>
+                        <div>
+                            <label className='form-label' htmlFor="Message">Message</label>
+                            <input className='form-input' type="text" required />
+                        </div>
+                        <div>
+                            <button type='submit' id='sendMssgBtn'>Send</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div className='thanks4msgDiv'>
+                    <div id='thanks4msg' style={{ display: 'none' }}>
+                        <h5>Thank You</h5>
+                        <p>I'll get back to you as soon as possible</p>
+                    </div>
+                </div>
+
+            </div >
         </div>
     );
 }

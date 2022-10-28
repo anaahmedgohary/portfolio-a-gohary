@@ -6,15 +6,15 @@ import 'aos/dist/aos.css';
 
 export default function MyProjects()
 {
-  AOS.init();
+  AOS.init(2000);
 
   return (
     <div className="proj-body">
-      <h1 className="proj-title">My Projects</h1>
+      <h1 className="proj-title" id='myProjAnchore'>My Projects</h1>
 
       <div className="proj-cards">
 
-        <div className="card proj-card pc01" data-aos='fade-up' data-aos-duration="500" data-aos-easing="ease-out">
+        <div className="card proj-card pc01" data-aos='flip-down' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/resta02.png"
@@ -35,7 +35,7 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc02" data-aos='fade-up' data-aos-duration="500" data-aos-easing="ease-out">
+        <div className="card proj-card pc02" data-aos='flip-down' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/shahd01.png"
@@ -61,7 +61,7 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc03" data-aos='fade-up' data-aos-delay="100" data-aos-easing="ease-out">
+        <div className="card proj-card pc03" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/menusvercel.jpg"
@@ -86,8 +86,7 @@ export default function MyProjects()
 
         
 
-        <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="500" data-aos-easing="ease-out"
->
+        <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/reviewsThump.png"

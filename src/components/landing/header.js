@@ -1,43 +1,69 @@
 import React from 'react'
-import "./style/style.css"
+//import "./style/style.css"
+import './style/headerstyle/headerstyle.css'
 
 function Header()
 {
     return (
-      <>
+      
         <header className="mheader">
-          <h1 className='my-name-title'>Ahmed Gohary</h1>
-          <h6 className='my-job-title'>Frontend Web Developer</h6>
+         <div className='myName-job'>
+           <h1 className='my-name-title'>Ahmed Gohary</h1>
+           <h6 className='my-job-title'>Frontend Web Developer</h6>
+         </div>
 
-          <div className="personal-image">
+          {/* <div className="personal-image">
             <img className="profile-img" src="./images/000.jpg" alt="profile pic" />
-          </div>
+          </div> */}
 
           <div className="und-pic">
             <div className="contact-container">
-              <h3>Contact Information</h3>
+              <div>
+                <h3>Welcome To My Portfolio</h3>
+              </div>
+            
               <div className='info-rows'>
-                <p className="info-row">
-                  <strong>Email:</strong> gogoahmed13@gmail.com
-                </p>
-                <p className="info-row">
-                  <strong>Phone:</strong> +201090371068
-                </p>
-                <p className="info-row">
-                  <strong>Address:</strong> Cairo, Egypt
-                </p>
-                <p className="info-row">
-                  <strong>
-                    <a className='header-con-link' href="https://www.linkedin.com/in/ahmed-gohary-a67963192/" target="_blank" rel="noopener noreferrer">
-                    Linkedin
-                    </a>
-                  </strong>
-                </p>
+
+                <div className="info-row">
+                  <a className='header-con-link' href="#myProjAnchore">
+                    <strong>Projects</strong>
+                  </a>
+              </div>
+              
+              <div className="info-row">
+                <a className='header-con-link' href="#mySkillsA">
+                  <strong>Skills</strong>
+                </a>
+              </div>
+              
+              <div className="info-row">
+                <a className='header-con-link' href="#aboutMeA">
+                  <strong>About me</strong>
+                </a>
+              </div>
+
+              <div className="info-row">
+                <a className='header-con-link' href="#contactMeA">
+                  <strong>Contact</strong>
+                </a>
+              </div>
+
+
+
               </div>
             </div>
           </div>
+
+          <div className='arrowdown-div'>
+          <a href='#scrolledto' className='piecesDiv'>
+              <span className='piece'></span>
+              <span className='piece'></span>
+              <span className='piece'></span>
+            </a>
+
+          </div>
         </header>
-      </>
+      
     );
 }
 

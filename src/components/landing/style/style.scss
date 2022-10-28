@@ -13,6 +13,22 @@ $guccired: rgba(168, 43, 17, 1);
     align-items: center;
 }
 
+@mixin flexCenterWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin gridCenter {
+    display: grid;
+    place-items: center;
+}
+
+$eleBlack:rgba(30,30,30,1);
+$backColor: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+$wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
+
 
 
 
@@ -25,119 +41,6 @@ $guccired: rgba(168, 43, 17, 1);
 }
 
 
-header {
-    //background-color: rgba(168, 43, 17, .8);
-    background-color: rgba(10, 46, 20, 1);
-    background-image: url(/public/images/lughtbubls.png);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: white;
-    padding: 3%;
-    padding-bottom: 3%;
-
-    .my-name-title{
-        color: rgb(150, 199, 64);
-        font-family: 'Dosis', sans-serif;
-    }
-    .my-job-title{
-        font-family: 'Silkscreen', cursive;
-        color: rgba(234, 184, 90, 0.562);
-    }
-
-    .personal-image {
-        margin: auto;
-        border: solid;
-        height: 20vw;
-        width: 20vw;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        margin-bottom: 5%;
-        color: gold;
-
-        .profile-img {
-            height: 18vw;
-            width: 18vw;
-            border-radius: 50%;
-        }
-    }
-
-    .header-con-link{
-        text-decoration: none;
-        color: green;
-        font-weight: bolder;
-    }
-
-    .und-pic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-
-
-        .contact-container {
-            display: grid;
-            place-items: center;
-            //flex-direction: column;
-            width: 100%;
-            //height: 23vw;
-            //max-width: 40rem;
-            //min-width: fit-content;
-
-            .info-rows{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-                width: 100%;
-                margin-inline: auto;
-                border-top: rgba(192, 145, 25, 0.6) solid;
-                
-                .info-row{
-                    min-height: 4.2rem;
-                    min-width: 300px;
-                    padding-inline: 2rem;
-                    max-width:20%;
-                    margin-inline: auto;
-                    border: solid rgb(35, 103, 85);
-                    border-radius: 0px 50px 0px 50px;
-                    transition: all 500ms;
-                    &:hover{
-                        color: black;
-                        background-color: skyblue;
-                        border-color: transparent;
-                    }
-                }
-            }
-
-            h3 {
-                color: rgba(192, 145, 25, 0.6);
-                //text-decoration: underline;
-                font-size: 1.4rem;
-                text-align: center;
-                margin: 0;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            }
-
-            p{
-                @include FlexCenters();
-                flex-direction: column;
-                flex-wrap: wrap;
-                line-break: auto;
-                word-wrap: break-word;
-                //white-space: no-wrap;
-                font-size: 1rem;
-                font-family: 'Courier New', Courier, monospace;
-                width: 100%;
-                text-align: center;
-                margin: 0;
-                min-height: fit-content;
-            }
-
-
-        }
-    }
-}
 
 
 
@@ -213,9 +116,21 @@ header {
     //border: solid white;
     text-align: center;
     min-width: 300px;
-    max-width: 400px;
+    width: 400px;
+    max-width: 80%;
+    min-height: 26rem;
     margin-top: 2%;
     margin-inline: auto;
+    background-image: url(./images/pink-strokes.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include gridCenter();
+    //grid-template-rows: 50% 50%;
+    //align-items: end;
+    overflow: hidden;
+    border-radius: 500px 500px 100px 100px;
+    border: solid red;
 
 
     .about-img {
@@ -227,22 +142,31 @@ header {
                 background-color: orchid;
             }
 
+
+    .card-body{
+        @include gridCenter();
+        grid-template-rows:  1fr 1fr;
+    // align-items: end;
+    }
     .card-title {
+        align-self: end;
         width: 90%;
-        margin: auto;
-        font-size: 1.2rem;
+       // margin: auto;
+        font-size: 2rem;
         border-bottom: solid;
         font-family: 'Lobster', cursive;
     }
 
     .about-content {
+        align-self: stretch;
         width: 90%;
-        margin: auto;
+        //margin: auto;
         padding-inline: 4%;
+        padding-block: 4%;
         text-align: center;
         font-weight: bold;
-        font-size: 0.8rem;
-        background-color: rgba(0, 128, 128, 0.4);
+        font-size: 1rem;
+        background-color: rgba(0, 128, 128, 0.9);
     }
 } 
 
