@@ -107,8 +107,6 @@ export default function MyProjects()
           </div>
         </div>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-
         {/* <div className="card proj-card pc05" data-aos='fade-up'>
             <img
               className="card-img-top card-image"
