@@ -81,6 +81,7 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     }
 }
 
+$formBckgColor: rgba(40, 40, 40, 1);
 .message-sender {
     color: white;
     width: 80%;
@@ -90,15 +91,31 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     margin-top: 5%;
     //border: solid red;
     margin-inline: auto;
-   // padding-bottom: 8rem;
 
+    .titlediv{
+        background-color: $formBckgColor;
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 20px 20px 0 0;
+        padding: 04% 4%;
+        //text-align: center;
+        :first-child{
+          //  background-color: rgba(25, 135, 84, 1);
+            font-size: 1.5rem;
+            width: fit-content;
+            color: rgba(25, 135, 84, 1);
+        }
+    }
+    
     .mssageDiv {
         width: 100%;
         //border: solid palevioletred;
+        background-color: $formBckgColor;
+        border-radius: 0 0 20px 20px;
 
         .mssage-form {
             //border: solid red;
-            min-height: 20rem;
+            min-height: 22rem;
             // width: 100%;
             display: grid;
             grid-template-columns: 4% 1fr 4% 1fr 4%;
@@ -113,25 +130,23 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
                 //grid-template-rows: 1fr;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
+               //min-height: 100px;
 
                 label {
-                    // margin-top: auto;
-                    //border: solid  1px;
-                    align-self: end;
                     margin: 0;
                     display: flex;
                     align-items: flex-end;
                     justify-content: center;
+                    align-self: end;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.2rem;
+                    line-height: 0%;
                 }
                 input {
-                    //  align-self: stretch;
-                    // justify-self: stretch;
                     border-radius: 6px;
                     margin: 0;
                     padding: 0;
-                    max-height: 2rem;
-                    //width: 100%;
-                    //min-width: 300px;
+                    max-height: 2.2rem;
                     grid-row: 2/3;
                     text-align: center;
                     font-size: 1.1rem;
@@ -143,6 +158,7 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
             div:nth-of-type(1) {
                 grid-column: 2/3;
                 place-items: center;
+                
             }
             div:nth-of-type(2) {
                 grid-column: 4/5;
@@ -153,7 +169,11 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
                 grid-column: 2/5;
                 grid-row: 2/3;
                 //place-self: center;
-                grid-template-rows: 16% 1fr;
+                grid-template-rows: 24% 1fr;
+                
+                label{
+                    line-height: unset;
+                }
 
                 input {
                     // justify-self: stretch;
@@ -211,18 +231,51 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     }
 }
 
-@media screen and (max-width: 350px) {
-    .mssage-form {
-        @include flexCenter();
-        flex-direction: column;
-        flex-wrap: wrap;
-        background-color: red;
+@media screen and (max-width: 590px) {
 
-        div {
-            flex: 1;
-            flex-basis: 0.2;
-        }
+    .message-sender {
+     .mssageDiv {
+    .mssage-form {
+        // @include flexCenter();
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // background-color: red;
+        grid-template-rows: 20% 20% 40% 1fr;
+
+        div:nth-of-type(1) {
+                grid-column: 2/5;
+                grid-row: 1/2;
+                align-self: start;
+
+                label{
+                    line-height: 100%;
+                }
+                input {
+                    max-width: 320px;
+                }
+            }
+
+            div:nth-of-type(2) {
+                grid-column: 2/5;
+                grid-row: 2/3;
+                align-self: start;
+
+                label{
+                    line-height: 100%;
+                }
+                input {
+                    max-width: 320px;
+                }
+            }
+            div:nth-of-type(3) {
+                grid-row: 3/4;
+                grid-template-rows: 22% 1fr;
+            }
+            div:nth-of-type(4) {
+                grid-row: 4/5;
+            }
     }
+}}
 }
 
 .thanks4msgDiv {
@@ -231,6 +284,7 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     //border: solid rgba(0, 0, 255, 0.322);
     height: 6rem;
     @include flexCenter();
+    
 
     #thanks4msg {
        // border: solid;

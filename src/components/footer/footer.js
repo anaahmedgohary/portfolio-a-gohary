@@ -48,8 +48,8 @@ const Footer = () =>
                 </div>
             </div>
             <div className='message-sender'>
-                <div>
-                    <h4>Send me a message</h4>
+                <div className='titlediv'>
+                    <h4>Send me a message !</h4>
                 </div>
                 <div className='mssageDiv'>
                     <form className='mssage-form' onSubmit={handelSubmitMsg}>

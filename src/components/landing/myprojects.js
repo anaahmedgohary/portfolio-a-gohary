@@ -27,8 +27,8 @@ export default function MyProjects()
               with REACT JS framework.
             </p>
             <a
-              href="https://react-restaurant-git-master-ahmedgohary.vercel.app/"
-              className="btn btn-primary"
+              href="https://react-restaurant-git-master-ahmedgohary.vercel.app/" target="_blank" rel="noopener noreferrer"
+              className="btn btn-primary linkBtn"
             >
               Link to project
             </a>
@@ -54,7 +54,7 @@ export default function MyProjects()
             </p>
             <a
               href="http://shahdresturant.epizy.com/"
-              className="btn btn-primary"
+              className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer"
             >
               Link to project
             </a>
@@ -75,7 +75,7 @@ export default function MyProjects()
             </p>
             <a
               href="https://menusapp-ahmedgohary.vercel.app"
-              className="btn btn-primary"
+              className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer"
             >
               Link to project
             </a>
@@ -101,11 +101,13 @@ export default function MyProjects()
               Project of website for Customer reviews made with with [PHP,
               HTML, SASS, JavaScript, CSS, MySQL, jQuery].
             </p>
-            <a href="http://review-app.epizy.com/" className="btn btn-primary">
+            <a href="http://review-app.epizy.com/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
               Link to project
             </a>
           </div>
         </div>
+
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
 
         {/* <div className="card proj-card pc05" data-aos='fade-up'>
             <img
@@ -119,7 +121,7 @@ export default function MyProjects()
                 Project of website for Customer reviews made with with [jQuery,
                 HTML, CSS].
               </p>
-              <a href="/review-app" className="btn btn-primary">
+              <a href="/review-app" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
                 Link to project
               </a>
             </div>

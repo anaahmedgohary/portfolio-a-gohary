@@ -32,6 +32,8 @@
     max-height: 600px;
     padding: 0;
     border: solid black;
+    background-color: rgba(0, 40, 40, 1);
+    color: rgb(235, 233, 233);
     //@include FlexCenters();
     display: grid;
     place-items: end;
@@ -46,6 +48,28 @@
     margin-inline: auto;
     border: solid gold;
     }
+
+    
+    .linkBtn{
+        background-color: rgba(30, 30, 30, 1);
+        border-color: white;
+        box-shadow: 0 0 5px 2px white;
+        
+
+        &:hover{
+            box-shadow: 0 0 5px 2px crimson;
+           // background-color: crimson;
+           color: lightsalmon;
+        }
+
+        &:active{
+            background-color: white;
+            color: green;
+            box-shadow: 0 0 5px 2px crimson;
+
+        }
+    }
+
     } 
 
 }
