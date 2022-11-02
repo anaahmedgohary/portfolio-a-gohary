@@ -19,17 +19,17 @@ export default function MyProjects()
         <div className="card proj-card pc01" data-aos='flip-down' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
-            src="./images/resta02.png"
+            src="./images/carsapp.png"
             alt="website screenpshot"
           />
           <div className="card-body">
-            <h5 className="card-title">Resturant web app with Cart (REACT)</h5>
+            <h5 className="card-title">car prices web app (REACT.js)</h5>
             <p className="card-text">
-              Project of website for resturant web app with dynamic Cart made
-              with REACT JS framework.
+              Project of website for car prices with dynamic Cart .
+              Made with [ REACT.JS, JSX, CSS, SASS, Express.js, Node.js].
             </p>
             <a
-              href="https://react-restaurant-git-master-ahmedgohary.vercel.app/" target="_blank" rel="noopener noreferrer"
+              href="https://carprices.vercel.app/" target="_blank" rel="noopener noreferrer"
               className="btn btn-primary linkBtn"
             >
               Link to project
@@ -72,11 +72,11 @@ export default function MyProjects()
           <div className="card-body">
             <h5 className="card-title">Menus web app with (REACT)</h5>
             <p className="card-text">
-              Project of web app for Menus made with REACT.JS framework ,
-              SASS.
+              Project of web app for Menus made with [REACT.JS, Express.js, Node.js, JSX, CSS,
+              SASS].
             </p>
             <a
-              href="https://menusapp-ahmedgohary.vercel.app"
+              href="https://menusapp.vercel.app/"
               className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer"
             >
               Link to project
@@ -100,7 +100,7 @@ export default function MyProjects()
             </h5>
             <p className="card-text">
               Project of website for Elon Musk fanpage made with with
-              [React.js, HTML, SASS, JavaScript, CSS, jQuery].
+              [React.js, JSX, SASS, JavaScript, SASS, CSS,].
             </p>
             <a href="https://elonmuskfans.vercel.app/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
               Link to project

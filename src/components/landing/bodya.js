@@ -57,7 +57,8 @@ function Bodya()
               data-aos={faderight} className='my-skill'>Git</p>
             <p data-aos={fadeleft} className='my-skill'>Github</p>
             <p data-aos={fadeleft} className='my-skill'>SASS.scss</p>
-            <p data-aos={fadeleft} className='my-skill'>BootStrap</p>
+            <p data-aos={fadeleft} className='my-skill'>Node.js</p>
+            <p data-aos={fadeleft} className='my-skill'>Express.js</p>
             <p data-aos={fadeleft} className='my-skill'>REACT.js</p>
             <p
               data-aos={faderight} className='my-skill'>Adobe Photoshop</p>
@@ -69,8 +70,8 @@ function Bodya()
             <p data-aos={fadeleft} className='my-skill'>GIMP</p>
             <p data-aos={fadeleft} className='my-skill'>Microsoft Office</p>
             <p
-              data-aos={faderight} className='my-skill'>MySQL</p>
-            <p data-aos={fadeleft} className='my-skill'>PHP</p>
+              data-aos={faderight} className='my-skill'>SQL</p>
+            <p data-aos={fadeleft} className='my-skill'>MySQL</p>
           </div>
         </div>
 
