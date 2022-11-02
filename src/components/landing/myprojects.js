@@ -4,6 +4,8 @@ import "./style/myprojects/bodybstyle.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import elonappsnap from "./style/images/elonapp.png";
+
 export default function MyProjects()
 {
   AOS.init(2000);
@@ -71,7 +73,7 @@ export default function MyProjects()
             <h5 className="card-title">Menus web app with (REACT)</h5>
             <p className="card-text">
               Project of web app for Menus made with REACT.JS framework ,
-              Bootstrap & SASS.
+              SASS.
             </p>
             <a
               href="https://menusapp-ahmedgohary.vercel.app"
@@ -89,19 +91,18 @@ export default function MyProjects()
         <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
-            src="./images/reviewsThump.png"
+            src={elonappsnap}
             alt="website screenpshot"
           />
           <div className="card-body">
             <h5 className="card-title">
-              Customer reviews web app, connected to MySQL Database. And
-              Backend API.
+              Elon Musk fanpage web app.
             </h5>
             <p className="card-text">
-              Project of website for Customer reviews made with with [PHP,
-              HTML, SASS, JavaScript, CSS, MySQL, jQuery].
+              Project of website for Elon Musk fanpage made with with
+              [React.js, HTML, SASS, JavaScript, CSS, jQuery].
             </p>
-            <a href="http://review-app.epizy.com/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
+            <a href="https://elonmuskfans.vercel.app/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
               Link to project
             </a>
           </div>
