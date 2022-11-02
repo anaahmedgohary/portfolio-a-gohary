@@ -114,7 +114,10 @@
 }
 
 .sub-header {
-  background: linear-gradient(rgb(5, 22, 5), rgb(4, 22, 9), darkolivegreen, rgb(156, 177, 156), rgb(156, 177, 156), rgb(10, 106, 86));
+  background-image: url(/public/images/bgcoding010.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-blend-mode: overlay;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
