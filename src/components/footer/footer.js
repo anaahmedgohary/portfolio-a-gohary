@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style/footer.css";
+import axios from 'axios';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,9 +13,44 @@ const Footer = () =>
     
     AOS.init(1000);
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    useEffect(() =>
+    {
+        // setName($("#name").val())
+        // setEmail($("#email").val())
+        // setMessage($("#message").val());
+        console.log(name)
+        // console.log(email)
+        // console.log(message)
+        
+    },[name, email, message])
+
+
+    const baseURL = "https://backend-mebattery.vercel.app"
+    //const localBase = "http://localhost:8080"
     function handelSubmitMsg(e)
     {
         e.preventDefault();
+
+        axios
+            .post(`${baseURL}/portfoliomessage`, {
+                name: `${name}`,
+                email: `${email}`,
+                message: `${message}`
+            }).then((Response) =>
+            {
+                console.log(Response);
+                
+            })
+            .catch((error) =>
+            {
+                console.log(error);
+            });
+            
+
         //alert('thank you!');
         $('#thanks4msg').fadeToggle(1000);
         $('#thanks4msg').fadeToggle(4000);
@@ -55,16 +91,22 @@ const Footer = () =>
                     <form className='mssage-form' onSubmit={handelSubmitMsg}>
 
                         <div>
-                            <label className='form-label' htmlFor="Name">Name</label>
-                            <input className='form-input' type="text" required />
+                            <label className='form-label' htmlFor="name">Name</label>
+                            <input className='form-input' id='name' name='name' type="text" required
+                                onChange={(e)=>{setName(e.target.value)}}
+                            />
                         </div>
                         <div>
-                            <label className='form-label' htmlFor="Email">Email</label>
-                            <input className='form-input' type="text" required />
+                            <label className='form-label' htmlFor="email">Email</label>
+                            <input className='form-input' id='email' name='email' type="text" required
+                                onChange={(e) => { setEmail(e.target.value) }}
+                            />
                         </div>
                         <div>
-                            <label className='form-label' htmlFor="Message">Message</label>
-                            <input className='form-input' type="text" required />
+                            <label className='form-label' htmlFor="message">Message</label>
+                            <input className='form-input' id='message' name='message' type="text" required
+                                onChange={(e) => { setMessage(e.target.value) }}
+                            />
                         </div>
                         <div>
                             <button type='submit' id='sendMssgBtn'>Send</button>
