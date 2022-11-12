@@ -18,7 +18,7 @@
     "react-use-cart": "^1.13.0",
     "web-vitals": "^2.1.4"
   },
-  "proxy":"https://backend-mebattery.vercel.app/",
+  "proxy":"https://backend-mebattery.vercel.app/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

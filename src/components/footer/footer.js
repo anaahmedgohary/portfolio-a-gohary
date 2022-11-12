@@ -29,7 +29,7 @@ const Footer = () =>
     },[name, email, message])
 
 
-    const baseURL = "https://backend-mebattery.vercel.app"
+    const baseURL = "https://backend-mebattery.vercel.app/portfolio"
     //const localBase = "http://localhost:8080"
     function handelSubmitMsg(e)
     {
