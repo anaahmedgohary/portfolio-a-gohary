@@ -30,30 +30,40 @@ const Footer = () =>
 
 
     const baseURL = "https://backend-mebattery.vercel.app/portfolio"
-    //const localBase = "http://localhost:8080"
+   // const localBase = "http://localhost:8080"
     function handelSubmitMsg(e)
     {
         e.preventDefault();
 
         axios
             .post(`${baseURL}/portfoliomessage`, {
-                name: `${name}`,
-                email: `${email}`,
-                message: `${message}`
-            }).then((Response) =>
-            {
-                console.log(Response);
-                
-            })
-            .catch((error) =>
-            {
-                console.log(error);
-            });
+            name: `${name}`,
+            email: `${email}`,
+            message: `${message}`
+        }).then((Response) =>
+        {
+            console.log(Response);
             
+        })
+        .catch((error) =>
+        {
+            console.log(error);
+        });
+
+        // sendMssgBtn
+       // $('#MSGForm').find('input').attr("disabled", true);
+       
+      //  $('#sendMssgBtn').hide();
+        $('#MSGForm').find('input').val("");
+      //  $('#MSGForm').find('input').attr("disabled", true);
+
+
+         // $('#MSGForm').find('input').attr("readonly", true);
+       // $('#MSGForm').find('input').css("display", "none")
 
         //alert('thank you!');
         $('#thanks4msg').fadeToggle(1000);
-        $('#thanks4msg').fadeToggle(4000);
+        $('#thanks4msg').fadeToggle(6000);
 
     }
 
@@ -88,7 +98,7 @@ const Footer = () =>
                     <h4>Send me a message !</h4>
                 </div>
                 <div className='mssageDiv'>
-                    <form className='mssage-form' onSubmit={handelSubmitMsg}>
+                    <form className='mssage-form' id='MSGForm' onSubmit={handelSubmitMsg}>
 
                         <div>
                             <label className='form-label' htmlFor="name">Name</label>
