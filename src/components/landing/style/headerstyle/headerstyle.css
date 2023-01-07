@@ -8,7 +8,7 @@
 
 header {
   background-color: rgb(10, 46, 20);
-  background-image: url(/public/images/lughtbubls.png);
+  background-image: url(/images/lughtbubls.png);
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
