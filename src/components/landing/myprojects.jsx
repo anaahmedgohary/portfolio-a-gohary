@@ -4,7 +4,10 @@ import "./style/myprojects/bodybstyle.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import elonappsnap from "./style/images/elonapp.png";
+// import elonappsnap from "./style/images/elonapp.png";
+import mebatteryimg from "./style/images/mebattery02.png";
+import rpsimg from "./style/images/rps.png"
+import menusapp from "./style/images/menusapp.png"
 
 export default function MyProjects()
 {
@@ -45,13 +48,13 @@ export default function MyProjects()
           />
           <div className="card-body">
             <h5 className="card-title">
-              Web app for online shopping. [MySQL DB. PHP. local storage.
+              Web app for online shopping. [SQL DB. PHP. local storage.
               Paypal.]
             </h5>
             <p className="card-text">
               Project of website for online shopping. Connected to MySQL
               Database. Stores Cart data in local storage. Added Paypal
-              Payment method. Made with [PHP, HTML, JavaScript, CSS, MySQL,
+              Payment method. Made with [PHP, HTML, JavaScript, CSS, SQL,
               jQuery].
             </p>
             <a
@@ -63,32 +66,13 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc03" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
-          <img
-            className="card-img-top card-image"
-            src="./images/menusvercel.jpg"
-            alt="website screenpshot"
-          />
-          <div className="card-body">
-            <h5 className="card-title">Menus web app with (REACT)</h5>
-            <p className="card-text">
-              Project of web app for Menus made with [REACT.JS, Express.js, Node.js, JSX, CSS,
-              SASS].
-            </p>
-            <a
-              href="https://menusapp.vercel.app/"
-              className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer"
-            >
-              Link to project
-            </a>
-          </div>
-        </div>
+        
 
         
 
         
 
-        <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+        {/* <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src={elonappsnap}
@@ -99,10 +83,70 @@ export default function MyProjects()
               Elon Musk fanpage web app.
             </h5>
             <p className="card-text">
-              Project of website for Elon Musk fanpage made with with
+              Project of website for Elon Musk fanpage made with
               [React.js, JSX, SASS, JavaScript, SASS, CSS,].
             </p>
             <a href="https://elonmuskfans.vercel.app/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
+              Link to project
+            </a>
+          </div>
+        </div> */}
+
+        <div className="card proj-card pc05" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+          <img
+            className="card-img-top card-image"
+            src={mebatteryimg}
+            alt="webapp screenpshot"
+          />
+          <div className="card-body">
+            <h5 className="card-title">
+              MeBattery web app.
+            </h5>
+            <p className="card-text">
+              Project of web app to record personal energy levels during day.Backend Node.js. Connected to Database to record notes. Made with
+              [React.js, Express.js, SQL, JSX, SASS, JavaScript, SASS, CSS, Bootstrap].
+            </p>
+            <a href="https://mebattery.vercel.app/" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
+              Link to project
+            </a>
+          </div>
+        </div>
+
+        <div className="card proj-card pc05" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+          <img
+            className="card-img-top card-image"
+            src={rpsimg}
+            alt="webapp screenpshot"
+          />
+          <div className="card-body">
+            <h5 className="card-title">
+              rock paper scissors web game.
+            </h5>
+            <p className="card-text">
+              Project of web app to play rock paper scissors game staticly with friends. Made with
+              [HTML, SASS, JavaScript, SASS, CSS, Bootstrap].
+            </p>
+            <a href="https://anaahmedgohary.github.io/rock-paper-scissors/play-vs-friend.html" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
+              Link to project
+            </a>
+          </div>
+        </div>
+
+        <div className="card proj-card pc06" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+          <img
+            className="card-img-top card-image"
+            src={menusapp}
+            alt="webapp screenpshot"
+          />
+          <div className="card-body">
+            <h5 className="card-title">
+              Menus web app.
+            </h5>
+            <p className="card-text">
+              Project of web app to provide menus for restaurants and cafes. Made with
+              [REACT.js, Node.js, Express.js, JavaScript, SASS, CSS, Bootstrap].
+            </p>
+            <a href="https://menusapp.vercel.app" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
               Link to project
             </a>
           </div>
