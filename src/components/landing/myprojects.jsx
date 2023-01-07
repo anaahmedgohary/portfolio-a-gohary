@@ -19,14 +19,36 @@ export default function MyProjects()
 
       <div className="proj-cards">
 
-        <div className="card proj-card pc01" data-aos='flip-down' data-aos-duration="3000" data-aos-easing="ease-out">
+        
+        <div className="card proj-card pc06" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+          <img
+            className="card-img-top card-image"
+            src={menusapp}
+            alt="webapp screenpshot"
+          />
+          <div className="card-body">
+            <h5 className="card-title">
+              Menus web app.
+            </h5>
+            <p className="card-text">
+              Project of web app to provide menus for restaurants and cafes. Made with
+              [REACT.js, Node.js, Express.js, JavaScript, SASS, CSS, Bootstrap].
+            </p>
+            <a href="https://menusapp.vercel.app" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
+              Link to project
+            </a>
+          </div>
+        </div>
+
+
+        <div className="card proj-card pc01" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/carsapp.png"
             alt="website screenpshot"
           />
           <div className="card-body">
-            <h5 className="card-title">car prices web app (REACT.js)</h5>
+            <h5 className="card-title">Cars Wishlist web app (REACT.js)</h5>
             <p className="card-text">
               Project of website for car prices with dynamic Cart .
               Made with [ REACT.JS, JSX, CSS, SASS, Express.js, Node.js].
@@ -40,7 +62,9 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc02" data-aos='flip-down' data-aos-duration="3000" data-aos-easing="ease-out">
+
+
+        <div className="card proj-card pc02" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src="./images/shahd01.png"
@@ -48,8 +72,7 @@ export default function MyProjects()
           />
           <div className="card-body">
             <h5 className="card-title">
-              Web app for online shopping. [SQL DB. PHP. local storage.
-              Paypal.]
+              Restaurant Web app for.
             </h5>
             <p className="card-text">
               Project of website for online shopping. Connected to MySQL
@@ -92,7 +115,7 @@ export default function MyProjects()
           </div>
         </div> */}
 
-        <div className="card proj-card pc05" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+        <div className="card proj-card pc03" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src={mebatteryimg}
@@ -112,7 +135,7 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc05" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
+        <div className="card proj-card pc04" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
           <img
             className="card-img-top card-image"
             src={rpsimg}
@@ -120,7 +143,7 @@ export default function MyProjects()
           />
           <div className="card-body">
             <h5 className="card-title">
-              rock paper scissors web game.
+              Rock Paper Scissors web game.
             </h5>
             <p className="card-text">
               Project of web app to play rock paper scissors game staticly with friends. Made with
@@ -132,25 +155,7 @@ export default function MyProjects()
           </div>
         </div>
 
-        <div className="card proj-card pc06" data-aos='fade-up' data-aos-duration="3000" data-aos-easing="ease-out">
-          <img
-            className="card-img-top card-image"
-            src={menusapp}
-            alt="webapp screenpshot"
-          />
-          <div className="card-body">
-            <h5 className="card-title">
-              Menus web app.
-            </h5>
-            <p className="card-text">
-              Project of web app to provide menus for restaurants and cafes. Made with
-              [REACT.js, Node.js, Express.js, JavaScript, SASS, CSS, Bootstrap].
-            </p>
-            <a href="https://menusapp.vercel.app" className="btn btn-primary linkBtn" target="_blank" rel="noopener noreferrer">
-              Link to project
-            </a>
-          </div>
-        </div>
+        
 
         {/* <div className="card proj-card pc05" data-aos='fade-up'>
             <img
